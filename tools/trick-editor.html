@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trick Editor - Compendium of Juggling</title>
+    <style>
+        :root {
+            --bg-primary: #0f0f12;
+            --bg-secondary: #17171c;
+            --bg-card: #222229;
+            --bg-hover: #2a2a33;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0b0;
+            --text-muted: #6b6b7a;
+            --accent-red: #ff4d4d;
+            --accent-yellow: #ffd84d;
+            --accent-blue: #4d9fff;
+            --accent-green: #4dff88;
+            --radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .app {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: var(--bg-secondary);
+            border-right: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .sidebar-header h1 {
+            font-size: 1.25rem;
+            margin-bottom: 4px;
+        }
+
+        .sidebar-header p {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .file-actions {
+            padding: 16px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 16px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-yellow));
+            color: var(--bg-primary);
+        }
+
+        .btn-primary:hover {
+            filter: brightness(1.1);
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-hover);
+        }
+
+        .btn-success {
+            background: var(--accent-green);
+            color: var(--bg-primary);
+        }
+
+        .search-box {
+            padding: 12px 20px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 12px;
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius);
+            color: var(--text-primary);
+            font-size: 0.875rem;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent-yellow);
+        }
+
+        .trick-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px;
+        }
+
+        .trick-item {
+            padding: 12px;
+            border-radius: var(--radius);
+            cursor: pointer;
+            margin-bottom: 4px;
+            transition: background 0.2s;
+        }
+
+        .trick-item:hover {
+            background: var(--bg-card);
+        }
+
+        .trick-item.active {
+            background: var(--bg-card);
+            border-left: 3px solid var(--accent-yellow);
+        }
+
+        .trick-item-name {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .trick-item-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: flex;
+            gap: 8px;
+        }
+
+        .trick-item-meta .learned {
+            color: var(--accent-green);
+        }
+
+        /* Main Content */
+        .main {
+            padding: 24px;
+            overflow-y: auto;
+        }
+
+        .no-selection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        .no-selection h2 {
+            margin-bottom: 8px;
+        }
+
+        .editor {
+            max-width: 900px;
+        }
+
+        .editor-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .editor-header h2 {
+            font-size: 1.5rem;
+        }
+
+        .editor-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .form-section {
+            background: var(--bg-secondary);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .form-section h3 {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            font-size: 0.8125rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 10px 12px;
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius);
+            color: var(--text-primary);
+            font-size: 0.9375rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-yellow);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--accent-green);
+        }
+
+        .array-editor {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .array-item {
+            display: flex;
+            gap: 8px;
+        }
+
+        .array-item input {
+            flex: 1;
+        }
+
+        .array-item .btn-remove {
+            padding: 8px 12px;
+            background: rgba(255, 77, 77, 0.2);
+            color: var(--accent-red);
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+        }
+
+        .btn-add-item {
+            padding: 8px 12px;
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            border: 1px dashed rgba(255,255,255,0.2);
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
+
+        .btn-add-item:hover {
+            border-color: var(--accent-yellow);
+            color: var(--accent-yellow);
+        }
+
+        .tutorial-content-editor {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .content-item {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .content-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content-item-type {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--accent-blue);
+        }
+
+        .content-item textarea,
+        .content-item input {
+            width: 100%;
+            padding: 8px;
+            background: var(--bg-hover);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 4px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.875rem;
+        }
+
+        .content-item textarea {
+            min-height: 80px;
+        }
+
+        .add-content-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .stats {
+            padding: 16px 20px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+        }
+
+        .btn-delete {
+            background: rgba(255, 77, 77, 0.2);
+            color: var(--accent-red);
+            border: 1px solid rgba(255, 77, 77, 0.3);
+        }
+
+        .btn-delete:hover {
+            background: rgba(255, 77, 77, 0.3);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Toast notifications */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            border-left: 4px solid var(--accent-green);
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>🤹 Trick Editor</h1>
+                <p>Compendium of Juggling</p>
+            </div>
+            
+            <div class="file-actions">
+                <input type="file" id="fileInput" accept=".json" style="display: none">
+                <button class="btn btn-secondary" onclick="document.getElementById('fileInput').click()">
+                    📂 Load JSON File
+                </button>
+                <button class="btn btn-primary" onclick="downloadJSON()" id="downloadBtn" disabled>
+                    💾 Download JSON
+                </button>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Search tricks..." id="searchInput" oninput="filterTricks()">
+            </div>
+            
+            <div class="trick-list" id="trickList">
+                <div class="no-selection">
+                    <p>Load a JSON file to begin</p>
+                </div>
+            </div>
+            
+            <div class="stats" id="stats"></div>
+        </aside>
+        
+        <main class="main" id="mainContent">
+            <div class="no-selection">
+                <h2>No trick selected</h2>
+                <p>Select a trick from the list or create a new one</p>
+                <br>
+                <button class="btn btn-primary" onclick="createNewTrick()" id="newTrickBtn" disabled>
+                    + New Trick
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let tricks = [];
+        let selectedIndex = -1;
+        let hasChanges = false;
+
+        // File handling
+        document.getElementById('fileInput').addEventListener('change', async (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            try {
+                const text = await file.text();
+                tricks = JSON.parse(text);
+                renderTrickList();
+                updateStats();
+                document.getElementById('downloadBtn').disabled = false;
+                document.getElementById('newTrickBtn').disabled = false;
+                showToast('Loaded ' + tricks.length + ' tricks');
+            } catch (err) {
+                alert('Error loading file: ' + err.message);
+            }
+        });
+
+        function renderTrickList() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const list = document.getElementById('trickList');
+            
+            const filtered = tricks.map((t, i) => ({ ...t, _index: i }))
+                .filter(t => 
+                    t.name.toLowerCase().includes(search) ||
+                    t.slug.toLowerCase().includes(search) ||
+                    t.siteswap?.toLowerCase().includes(search)
+                );
+            
+            list.innerHTML = filtered.map(t => `
+                <div class="trick-item ${t._index === selectedIndex ? 'active' : ''}" 
+                     onclick="selectTrick(${t._index})">
+                    <div class="trick-item-name">${escapeHtml(t.name)}</div>
+                    <div class="trick-item-meta">
+                        <span>${t.category}</span>
+                        <span>Level ${t.difficulty}</span>
+                        ${t.librarianLearned ? '<span class="learned">✓ C</span>' : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterTricks() {
+            renderTrickList();
+        }
+
+        function selectTrick(index) {
+            selectedIndex = index;
+            renderTrickList();
+            renderEditor();
+        }
+
+        function renderEditor() {
+            const main = document.getElementById('mainContent');
+            const trick = tricks[selectedIndex];
+            
+            if (!trick) {
+                main.innerHTML = `
+                    <div class="no-selection">
+                        <h2>No trick selected</h2>
+                        <p>Select a trick from the list or create a new one</p>
+                        <br>
+                        <button class="btn btn-primary" onclick="createNewTrick()">+ New Trick</button>
+                    </div>
+                `;
+                return;
+            }
+            
+            main.innerHTML = `
+                <div class="editor">
+                    <div class="editor-header">
+                        <h2>${escapeHtml(trick.name)}</h2>
+                        <div class="editor-actions">
+                            <button class="btn btn-success" onclick="saveTrick()">💾 Save Changes</button>
+                            <button class="btn btn-delete" onclick="deleteTrick()">🗑️ Delete</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Basic Info</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" id="edit-name" value="${escapeHtml(trick.name)}">
+                            </div>
+                            <div class="form-group">
+                                <label>Slug (URL)</label>
+                                <input type="text" id="edit-slug" value="${escapeHtml(trick.slug)}">
+                            </div>
+                            <div class="form-group">
+                                <label>Category</label>
+                                <select id="edit-category">
+                                    <option value="3 Ball" ${trick.category === '3 Ball' ? 'selected' : ''}>3 Ball</option>
+                                    <option value="4 Ball" ${trick.category === '4 Ball' ? 'selected' : ''}>4 Ball</option>
+                                    <option value="5 Ball" ${trick.category === '5 Ball' ? 'selected' : ''}>5 Ball</option>
+                                    <option value="6 Ball" ${trick.category === '6 Ball' ? 'selected' : ''}>6 Ball</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Difficulty (1-10)</label>
+                                <input type="number" id="edit-difficulty" min="1" max="10" value="${trick.difficulty}">
+                            </div>
+                            <div class="form-group">
+                                <label>Siteswap</label>
+                                <input type="text" id="edit-siteswap" value="${escapeHtml(trick.siteswap || '')}">
+                            </div>
+                            <div class="form-group">
+                                <label>GIF URL</label>
+                                <input type="text" id="edit-gifUrl" value="${escapeHtml(trick.gifUrl || '')}">
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-group">
+                                    <input type="checkbox" id="edit-librarianLearned" ${trick.librarianLearned ? 'checked' : ''}>
+                                    Librarian Learned (shows "C" badge)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Description (Plain Text)</h3>
+                        <div class="form-group full-width">
+                            <textarea id="edit-description">${escapeHtml(trick.description || '')}</textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Prerequisites</h3>
+                        <div class="array-editor" id="prereq-editor">
+                            ${(trick.prerequisites || []).map((p, i) => `
+                                <div class="array-item">
+                                    <input type="text" value="${escapeHtml(p)}" data-prereq="${i}">
+                                    <button class="btn-remove" onclick="removePrereq(${i})">×</button>
+                                </div>
+                            `).join('')}
+                            <button class="btn-add-item" onclick="addPrereq()">+ Add Prerequisite</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Related Tricks</h3>
+                        <div class="array-editor" id="related-editor">
+                            ${(trick.relatedTricks || []).map((r, i) => `
+                                <div class="array-item">
+                                    <input type="text" value="${escapeHtml(r)}" data-related="${i}">
+                                    <button class="btn-remove" onclick="removeRelated(${i})">×</button>
+                                </div>
+                            `).join('')}
+                            <button class="btn-add-item" onclick="addRelated()">+ Add Related Trick</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Tutorial Content</h3>
+                        <div class="tutorial-content-editor" id="content-editor">
+                            ${(trick.tutorialContent || []).map((item, i) => `
+                                <div class="content-item" data-content-index="${i}">
+                                    <div class="content-item-header">
+                                        <span class="content-item-type">${item.type}</span>
+                                        <button class="btn-remove" onclick="removeContent(${i})">×</button>
+                                    </div>
+                                    ${item.type === 'text' 
+                                        ? `<textarea data-content-text="${i}">${escapeHtml(item.content || '')}</textarea>`
+                                        : `<input type="text" data-content-gif="${i}" value="${escapeHtml(item.url || '')}" placeholder="GIF URL">`
+                                    }
+                                </div>
+                            `).join('')}
+                            <div class="add-content-buttons">
+                                <button class="btn-add-item" onclick="addContent('text')">+ Add Text</button>
+                                <button class="btn-add-item" onclick="addContent('gif')">+ Add GIF</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Tutorial Links</h3>
+                        <div class="array-editor" id="links-editor">
+                            ${(trick.tutorialLinks || []).map((link, i) => `
+                                <div class="array-item" style="flex-direction: column; gap: 8px;">
+                                    <input type="text" value="${escapeHtml(link.title || '')}" data-link-title="${i}" placeholder="Title">
+                                    <input type="text" value="${escapeHtml(link.url || '')}" data-link-url="${i}" placeholder="URL">
+                                    <button class="btn-remove" onclick="removeLink(${i})" style="align-self: flex-start;">× Remove</button>
+                                </div>
+                            `).join('')}
+                            <button class="btn-add-item" onclick="addLink()">+ Add Tutorial Link</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function saveTrick() {
+            const trick = tricks[selectedIndex];
+            
+            trick.name = document.getElementById('edit-name').value;
+            trick.slug = document.getElementById('edit-slug').value;
+            trick.id = trick.slug;
+            trick.category = document.getElementById('edit-category').value;
+            trick.numBalls = parseInt(trick.category);
+            trick.difficulty = parseInt(document.getElementById('edit-difficulty').value);
+            trick.siteswap = document.getElementById('edit-siteswap').value;
+            trick.gifUrl = document.getElementById('edit-gifUrl').value;
+            trick.description = document.getElementById('edit-description').value;
+            trick.librarianLearned = document.getElementById('edit-librarianLearned').checked;
+            
+            // Prerequisites
+            trick.prerequisites = Array.from(document.querySelectorAll('[data-prereq]'))
+                .map(el => el.value)
+                .filter(v => v.trim());
+            
+            // Related tricks
+            trick.relatedTricks = Array.from(document.querySelectorAll('[data-related]'))
+                .map(el => el.value)
+                .filter(v => v.trim());
+            
+            // Tutorial content
+            trick.tutorialContent = [];
+            document.querySelectorAll('[data-content-index]').forEach(el => {
+                const textEl = el.querySelector('[data-content-text]');
+                const gifEl = el.querySelector('[data-content-gif]');
+                if (textEl) {
+                    trick.tutorialContent.push({ type: 'text', content: textEl.value });
+                } else if (gifEl) {
+                    trick.tutorialContent.push({ type: 'gif', url: gifEl.value });
+                }
+            });
+            
+            // Tutorial links
+            trick.tutorialLinks = [];
+            const titles = document.querySelectorAll('[data-link-title]');
+            const urls = document.querySelectorAll('[data-link-url]');
+            titles.forEach((titleEl, i) => {
+                if (titleEl.value.trim() || urls[i].value.trim()) {
+                    trick.tutorialLinks.push({
+                        title: titleEl.value,
+                        url: urls[i].value
+                    });
+                }
+            });
+            
+            hasChanges = true;
+            renderTrickList();
+            updateStats();
+            showToast('Trick saved!');
+        }
+
+        function deleteTrick() {
+            if (!confirm('Are you sure you want to delete "' + tricks[selectedIndex].name + '"?')) return;
+            
+            tricks.splice(selectedIndex, 1);
+            selectedIndex = -1;
+            hasChanges = true;
+            renderTrickList();
+            renderEditor();
+            updateStats();
+            showToast('Trick deleted');
+        }
+
+        function createNewTrick() {
+            const newTrick = {
+                id: 'new-trick-' + Date.now(),
+                name: 'New Trick',
+                slug: 'new-trick-' + Date.now(),
+                difficulty: 5,
+                numBalls: 3,
+                category: '3 Ball',
+                siteswap: '',
+                prerequisites: [],
+                relatedTricks: [],
+                gifUrl: '',
+                description: '',
+                tutorialContent: [],
+                tutorialLinks: [],
+                librarianLearned: false
+            };
+            
+            tricks.push(newTrick);
+            selectedIndex = tricks.length - 1;
+            hasChanges = true;
+            renderTrickList();
+            renderEditor();
+            updateStats();
+            showToast('New trick created');
+        }
+
+        // Array editors
+        function addPrereq() {
+            const trick = tricks[selectedIndex];
+            trick.prerequisites = trick.prerequisites || [];
+            trick.prerequisites.push('');
+            renderEditor();
+        }
+
+        function removePrereq(index) {
+            tricks[selectedIndex].prerequisites.splice(index, 1);
+            renderEditor();
+        }
+
+        function addRelated() {
+            const trick = tricks[selectedIndex];
+            trick.relatedTricks = trick.relatedTricks || [];
+            trick.relatedTricks.push('');
+            renderEditor();
+        }
+
+        function removeRelated(index) {
+            tricks[selectedIndex].relatedTricks.splice(index, 1);
+            renderEditor();
+        }
+
+        function addContent(type) {
+            const trick = tricks[selectedIndex];
+            trick.tutorialContent = trick.tutorialContent || [];
+            if (type === 'text') {
+                trick.tutorialContent.push({ type: 'text', content: '' });
+            } else {
+                trick.tutorialContent.push({ type: 'gif', url: '' });
+            }
+            renderEditor();
+        }
+
+        function removeContent(index) {
+            tricks[selectedIndex].tutorialContent.splice(index, 1);
+            renderEditor();
+        }
+
+        function addLink() {
+            const trick = tricks[selectedIndex];
+            trick.tutorialLinks = trick.tutorialLinks || [];
+            trick.tutorialLinks.push({ title: '', url: '' });
+            renderEditor();
+        }
+
+        function removeLink(index) {
+            tricks[selectedIndex].tutorialLinks.splice(index, 1);
+            renderEditor();
+        }
+
+        function downloadJSON() {
+            const blob = new Blob([JSON.stringify(tricks, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'tricks.json';
+            a.click();
+            URL.revokeObjectURL(url);
+            showToast('JSON downloaded!');
+        }
+
+        function updateStats() {
+            const stats = document.getElementById('stats');
+            const learned = tricks.filter(t => t.librarianLearned).length;
+            stats.innerHTML = `
+                <strong>${tricks.length}</strong> tricks total<br>
+                <strong>${learned}</strong> marked as learned
+            `;
+        }
+
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.toString()
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
+
+        // Warn before leaving with unsaved changes
+        window.addEventListener('beforeunload', (e) => {
+            if (hasChanges) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
+    </script>
+</body>
+</html>
+
