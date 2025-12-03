@@ -8,22 +8,33 @@
 	let slug = $derived($page.params.slug);
 	let trick = $derived(tricks.find(t => t.slug === slug));
 	
-	// Find related tricks by same category or prerequisites
+	// Find more tricks - prioritize prerequisites and related tricks, then same category
 	let relatedTricks = $derived.by(() => {
 		if (!trick) return [];
 		
-		return tricks
-			.filter(t => {
-				if (t.slug === slug) return false;
-				// Same category
-				if (t.category === trick.category) return true;
-				// Related by name
-				if (trick.relatedTricks?.includes(t.name)) return true;
-				// Is a prerequisite
-				if (trick.prerequisites?.includes(t.name)) return true;
-				return false;
-			})
-			.slice(0, 6);
+		const priorityTricks: typeof tricks = [];
+		const categoryTricks: typeof tricks = [];
+		
+		for (const t of tricks) {
+			if (t.slug === slug) continue;
+			
+			// Priority: prerequisite or explicitly related (exact name match only)
+			const isPrereq = trick.prerequisites?.some(p => 
+				t.name.toLowerCase() === p.toLowerCase()
+			);
+			const isRelated = trick.relatedTricks?.some(r =>
+				t.name.toLowerCase() === r.toLowerCase()
+			);
+			
+			if (isPrereq || isRelated) {
+				priorityTricks.push(t);
+			} else if (t.category === trick.category) {
+				categoryTricks.push(t);
+			}
+		}
+		
+		// Return priority tricks first, then fill with category tricks
+		return [...priorityTricks, ...categoryTricks].slice(0, 6);
 	});
 	
 	// Find prerequisite tricks (with links)
@@ -237,11 +248,11 @@
 			</section>
 		{/if}
 
-		<!-- Related Tricks Section -->
+		<!-- More Tricks Section -->
 		{#if relatedTricks.length > 0}
 			<section class="related-section section">
 				<div class="container">
-					<h2>Related Tricks</h2>
+					<h2>More Tricks</h2>
 					<div class="related-grid">
 						{#each relatedTricks as relatedTrick}
 							<a href="{base}/tricks/{relatedTrick.slug}" class="related-card card">
