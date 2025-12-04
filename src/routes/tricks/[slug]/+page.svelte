@@ -8,17 +8,18 @@
 	let slug = $derived($page.params.slug);
 	let trick = $derived(tricks.find(t => t.slug === slug));
 	
-	// Find more tricks - prioritize prerequisites and related tricks, then same category
+	// Find more tricks - prioritize prerequisites/related, then same family, then same category
 	let relatedTricks = $derived.by(() => {
 		if (!trick) return [];
 		
 		const priorityTricks: typeof tricks = [];
+		const familyTricks: typeof tricks = [];
 		const categoryTricks: typeof tricks = [];
 		
 		for (const t of tricks) {
 			if (t.slug === slug) continue;
 			
-			// Priority: prerequisite or explicitly related (exact name match only)
+			// Priority 1: prerequisite or explicitly related (exact name match only)
 			const isPrereq = trick.prerequisites?.some(p => 
 				t.name.toLowerCase() === p.toLowerCase()
 			);
@@ -28,13 +29,17 @@
 			
 			if (isPrereq || isRelated) {
 				priorityTricks.push(t);
+			} else if (trick.trickFamily && t.trickFamily === trick.trickFamily) {
+				// Priority 2: same family
+				familyTricks.push(t);
 			} else if (t.category === trick.category) {
+				// Priority 3: same category
 				categoryTricks.push(t);
 			}
 		}
 		
-		// Return priority tricks first, then fill with category tricks
-		return [...priorityTricks, ...categoryTricks].slice(0, 6);
+		// Return priority tricks first, then family, then category
+		return [...priorityTricks, ...familyTricks, ...categoryTricks].slice(0, 6);
 	});
 	
 	// Find prerequisite tricks (with links)
@@ -91,10 +96,21 @@
 							<span class="badge badge-difficulty" data-level={trick.difficulty}>
 								Level {trick.difficulty}
 							</span>
+							{#if trick.trickFamily}
+								<span class="badge badge-family">{trick.trickFamily}</span>
+							{/if}
 							{#if trick.librarianLearned}
 								<span class="badge badge-learned" title="Librarian's Pick">C</span>
 							{/if}
 						</div>
+						
+						{#if trick.tags && trick.tags.length > 0}
+							<div class="trick-tags">
+								{#each trick.tags as tag}
+									<span class="badge badge-tag">{tag}</span>
+								{/each}
+							</div>
+						{/if}
 						
 						<h1 class="trick-name">{trick.name}</h1>
 						
@@ -338,7 +354,15 @@
 	.trick-badges {
 		display: flex;
 		gap: var(--space-sm);
+		margin-bottom: var(--space-md);
+		flex-wrap: wrap;
+	}
+
+	.trick-tags {
+		display: flex;
+		gap: var(--space-xs);
 		margin-bottom: var(--space-lg);
+		flex-wrap: wrap;
 	}
 
 	.trick-name {

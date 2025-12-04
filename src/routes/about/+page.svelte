@@ -4,6 +4,7 @@
 	
 	const stats = {
 		totalTricks: tricks.length,
+		twoBall: tricks.filter(t => t.numBalls === 2).length,
 		threeBall: tricks.filter(t => t.numBalls === 3).length,
 		fourBall: tricks.filter(t => t.numBalls === 4).length,
 		fiveBall: tricks.filter(t => t.numBalls === 5).length,
@@ -85,6 +86,10 @@
 							<div class="stat-item">
 								<span class="stat-value">{stats.totalTricks}</span>
 								<span class="stat-label">Total Tricks</span>
+							</div>
+							<div class="stat-item">
+								<span class="stat-value">{stats.twoBall}</span>
+								<span class="stat-label">2 Ball Patterns</span>
 							</div>
 							<div class="stat-item">
 								<span class="stat-value">{stats.threeBall}</span>

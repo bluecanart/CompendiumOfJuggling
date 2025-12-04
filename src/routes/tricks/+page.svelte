@@ -9,6 +9,7 @@
 	let searchQuery = $state('');
 	let selectedCategory = $state('');
 	let selectedDifficulty = $state('');
+	let selectedFamily = $state('');
 	let sortBy = $state('name');
 	
 	// Initialize from URL params in browser
@@ -17,11 +18,12 @@
 			searchQuery = $page.url.searchParams.get('q') || '';
 			selectedCategory = $page.url.searchParams.get('category') || '';
 			selectedDifficulty = $page.url.searchParams.get('difficulty') || '';
+			selectedFamily = $page.url.searchParams.get('family') || '';
 			sortBy = $page.url.searchParams.get('sort') || 'name';
 		}
 	});
 	
-	// Get unique categories and difficulties
+	// Get unique categories, difficulties, and families
 	const categories = [...new Set(tricks.map(t => t.category))].sort((a, b) => {
 		const numA = parseInt(a);
 		const numB = parseInt(b);
@@ -29,6 +31,8 @@
 	});
 	
 	const difficulties = [...new Set(tricks.map(t => t.difficulty))].sort((a, b) => a - b);
+	
+	const families = [...new Set(tricks.map(t => t.trickFamily).filter(f => f))].sort();
 	
 	// Filter and sort tricks
 	let filteredTricks = $derived.by(() => {
@@ -54,6 +58,11 @@
 			result = result.filter(t => t.difficulty === parseInt(selectedDifficulty));
 		}
 		
+		// Filter by family
+		if (selectedFamily) {
+			result = result.filter(t => t.trickFamily === selectedFamily);
+		}
+		
 		// Sort
 		switch (sortBy) {
 			case 'name':
@@ -76,9 +85,10 @@
 		if (searchQuery) params.set('q', searchQuery);
 		if (selectedCategory) params.set('category', selectedCategory);
 		if (selectedDifficulty) params.set('difficulty', selectedDifficulty);
+		if (selectedFamily) params.set('family', selectedFamily);
 		if (sortBy !== 'name') params.set('sort', sortBy);
 		
-		const newUrl = params.toString() ? `?${params.toString()}` : '/tricks';
+		const newUrl = params.toString() ? `${base}/tricks?${params.toString()}` : `${base}/tricks`;
 		goto(newUrl, { replaceState: true, noScroll: true, keepFocus: true });
 	}
 	
@@ -86,11 +96,12 @@
 		searchQuery = '';
 		selectedCategory = '';
 		selectedDifficulty = '';
+		selectedFamily = '';
 		sortBy = 'name';
-		goto('/tricks', { replaceState: true });
+		goto(`${base}/tricks`, { replaceState: true });
 	}
 	
-	let hasActiveFilters = $derived(searchQuery || selectedCategory || selectedDifficulty);
+	let hasActiveFilters = $derived(searchQuery || selectedCategory || selectedDifficulty || selectedFamily);
 </script>
 
 <svelte:head>
@@ -136,6 +147,15 @@
 							<option value={diff}>Level {diff}</option>
 						{/each}
 					</select>
+					
+					{#if families.length > 0}
+						<select bind:value={selectedFamily} onchange={updateUrl}>
+							<option value="">All Families</option>
+							{#each families as family}
+								<option value={family}>{family}</option>
+							{/each}
+						</select>
+					{/if}
 					
 					<select bind:value={sortBy} onchange={updateUrl}>
 						<option value="name">Sort: A-Z</option>
@@ -189,8 +209,8 @@
 									<span class="badge badge-difficulty" data-level={trick.difficulty}>
 										Level {trick.difficulty}
 									</span>
-									{#if trick.librarianLearned}
-										<span class="badge badge-learned" title="Librarian's Pick">C</span>
+									{#if trick.trickFamily}
+										<span class="badge badge-family">{trick.trickFamily}</span>
 									{/if}
 								</div>
 								<h3 class="trick-card-title">{trick.name}</h3>
@@ -198,6 +218,9 @@
 									<p class="trick-card-siteswap">{trick.siteswap}</p>
 								{/if}
 							</div>
+							{#if trick.librarianLearned}
+								<span class="trick-card-learned-indicator" title="Librarian's Pick">C</span>
+							{/if}
 						</a>
 					{/each}
 				</div>
@@ -293,6 +316,7 @@
 
 	.trick-card {
 		display: block;
+		position: relative;
 	}
 
 	.trick-card-image {
@@ -313,6 +337,25 @@
 
 	.trick-card:hover .trick-card-image img {
 		transform: scale(1.05);
+	}
+
+	.trick-card-learned-indicator {
+		position: absolute;
+		bottom: 8px;
+		right: 8px;
+		width: 24px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(160, 160, 176, 0.2);
+		color: var(--color-text-muted);
+		border-radius: 50%;
+		font-size: 0.75rem;
+		font-weight: 700;
+		opacity: 0.7;
+		backdrop-filter: blur(4px);
+		pointer-events: none;
 	}
 
 	.trick-card-content {

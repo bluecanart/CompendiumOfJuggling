@@ -1,5 +1,41 @@
 [
   {
+    "id": "twoinone",
+    "name": "Two in One",
+    "slug": "twoinone",
+    "difficulty": 1,
+    "numBalls": 2,
+    "category": "2 Ball",
+    "siteswap": "2",
+    "prerequisites": [],
+    "relatedTricks": [
+      "423",
+      "441 (Half-Box)",
+      "Fake Columns",
+      "Three In One"
+    ],
+    "gifUrl": "/JugglingGifs/2balltricks/twoinone.gif",
+    "description": "The Two in One is a fundamental two ball pattern that serves as a building block for many more advanced tricks. In this pattern, both balls are thrown and caught by the same hand, creating a continuous vertical circuit. This is one of the first patterns a juggler should learn, as it develops the hand-eye coordination and timing necessary for more complex tricks. To learn the Two in One, start by holding both balls in your dominant hand. Make a vertical throw with one ball, angled slightly toward the outside of your body. As that ball reaches its peak, throw the second ball in the same manner. You will then catch the first ball and immediately throw it back up, creating a continuous cycle. The key is to maintain consistent timing and height for both throws. Practice this pattern until you can perform it smoothly and consistently. Once mastered, the Two in One becomes the foundation for tricks like 441, 423, and Fake Columns.",
+    "tutorialContent": [
+      {
+        "type": "text",
+        "content": "The Two in One is a fundamental two ball pattern that serves as a building block for many more advanced tricks. In this pattern, both balls are thrown and caught by the same hand, creating a continuous vertical circuit. This is one of the first patterns a juggler should learn, as it develops the hand-eye coordination and timing necessary for more complex tricks."
+      },
+      {
+        "type": "gif",
+        "url": "/JugglingGifs/2balltricks/twoinone.gif"
+      },
+      {
+        "type": "text",
+        "content": "To learn the Two in One, start by holding both balls in your dominant hand. Make a vertical throw with one ball, angled slightly toward the outside of your body. As that ball reaches its peak, throw the second ball in the same manner. You will then catch the first ball and immediately throw it back up, creating a continuous cycle. The key is to maintain consistent timing and height for both throws. Practice this pattern until you can perform it smoothly and consistently. Once mastered, the Two in One becomes the foundation for tricks like 441, 423, and Fake Columns."
+      }
+    ],
+    "tutorialLinks": [],
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
+  },
+  {
     "id": "423",
     "name": "423",
     "slug": "423",
@@ -8,7 +44,7 @@
     "category": "3 Ball",
     "siteswap": "423",
     "prerequisites": [
-      "Two in one"
+      "Two in One"
     ],
     "relatedTricks": [],
     "gifUrl": "/JugglingGifs/3balltricks/423.gif",
@@ -29,11 +65,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=EuVXcusqV8A",
-        "title": "ieuan111 (video)"
+        "title": "ieuan111 (video)",
+        "url": "https://www.youtube.com/watch?v=EuVXcusqV8A"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "cascade",
@@ -107,7 +145,9 @@
         "url": "https://www.google.com/search?rlz=1C1CHNY_enUS399US399&amp;sourceid=chrome&amp;ie=UTF-8&amp;q=Learning+to+Juggle"
       }
     ],
-    "librarianLearned": true
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "fakecolumns",
@@ -118,7 +158,7 @@
     "category": "3 Ball",
     "siteswap": "(4,2)",
     "prerequisites": [
-      "Two in one"
+      "Two in One"
     ],
     "relatedTricks": [
       "Yo-Yo"
@@ -141,11 +181,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "3balljongliertricks",
-        "title": "billi billert (demonstration)"
+        "title": "billi billert (demonstration)",
+        "url": "3balljongliertricks"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "jugglerstennis",
@@ -183,11 +225,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=NspWd0ANmFM",
-        "title": "Expert Village (video)"
+        "title": "Expert Village (video)",
+        "url": "https://www.youtube.com/watch?v=NspWd0ANmFM"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "oy-oy",
@@ -211,11 +255,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=KoHEv0tznm8",
-        "title": "billi billert (demonstration)"
+        "title": "billi billert (demonstration)",
+        "url": "https://www.youtube.com/watch?v=KoHEv0tznm8"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "thew",
@@ -246,7 +292,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "yo-yo",
@@ -280,11 +328,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=Y-bMm2uW5ho",
-        "title": "ExpertVillage (video)"
+        "title": "ExpertVillage (video)",
+        "url": "https://www.youtube.com/watch?v=Y-bMm2uW5ho"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "columns",
@@ -330,11 +380,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=DElWwoNdJzQ",
-        "title": "Draitube (video)"
+        "title": "Draitube (video)",
+        "url": "https://www.youtube.com/watch?v=DElWwoNdJzQ"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "columnovervar",
@@ -359,7 +411,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "factory",
@@ -373,7 +427,7 @@
       "Fake Columns"
     ],
     "relatedTricks": [
-      "Pendulum \n\tDrop"
+      "Pendulum Drop"
     ],
     "gifUrl": "/JugglingGifs/3balltricks/factory.gif",
     "description": "The Factory is a simple but impressive trick that uses one arm to carry a ball over the entire pattern and drop it as if on an assembly line (hence the name). The trick is best performed with rigid, robotic arm movements, and is in fact also known as the Robot. The unusual motion of the Factory makes it crowd favorite, particularly among younger audiences. To learn the trick, it's useful to think of it first as a modified Fake Columns, with a \"fake\" that travels over the pattern. Practice this arm motion until you can execute it smoothly without interrupting the balls being thrown. Next we are going to add in the actual drop and catch. Start with a basic Fake Columns, and then start to do the pattern above, except this time you are going to release the ball once your hand reaches the other side, and then claw catch the center ball. This is going to probably be the most difficult stage of learning the Factory, since the coordination of your arm movements and your throws will likely lead to mix ups. Once you can do one cycle of the factory smoothly and consistently, you can start chaining them together to get the full Factory.",
@@ -401,11 +455,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=KVoxtg2fUVU",
-        "title": "Ashomsky (video)"
+        "title": "Ashomsky (video)",
+        "url": "https://www.youtube.com/watch?v=KVoxtg2fUVU"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "fakemess",
@@ -439,11 +495,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=dQstjW80D3w",
-        "title": "ashomsky (video)"
+        "title": "ashomsky (video)",
+        "url": "https://www.youtube.com/watch?v=dQstjW80D3w"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "half-shower",
@@ -486,11 +544,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=MnX24sXBuA4",
-        "title": "Expert Village (demonstration)"
+        "title": "Expert Village (demonstration)",
+        "url": "https://www.youtube.com/watch?v=MnX24sXBuA4"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "infinity",
@@ -504,7 +564,7 @@
       "Columns"
     ],
     "relatedTricks": [
-      "Overthrow \n\tVariation",
+      "Columns: Overthrow Variation",
       "Reverse Infinity"
     ],
     "gifUrl": "/JugglingGifs/3balltricks/infinity.gif",
@@ -517,11 +577,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=cv85AXBrxCo",
-        "title": "Bart Griffith (demonstration)"
+        "title": "Bart Griffith (demonstration)",
+        "url": "https://www.youtube.com/watch?v=cv85AXBrxCo"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "rainbowarches",
@@ -535,7 +597,7 @@
       "Columns"
     ],
     "relatedTricks": [
-      "Overthrow Variation"
+      "Columns: Overthrow Variation"
     ],
     "gifUrl": "/JugglingGifs/3balltricks/rainbowarches.gif",
     "description": "Rainbow Cross (also known as The Umbrella) is a variation on the standard Columns pattern in which the two outside balls are thrown in arching paths across your body, with one ball passing just beneath the other to avoid collisions. The only tricky part of this pattern is the arch throws, which require a bit of practice to master. Therefore, to most quickly learn the trick, it would be best to start out with just two balls, and practice those throws. Once you can make the arch throws easily, you can add in the third ball. It is probably most natural to start with a normal Columns pattern, and then occasionally add in some arch throws. As you become more accustomed to the trick, you can eventually start doing Rainbow Cross constantly.",
@@ -555,15 +617,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut015.html",
-        "title": "TWJ Club (text based)"
+        "title": "TWJ Club (text based)",
+        "url": "http://www.twjc.co.uk/tut015.html"
       },
       {
-        "url": "http://www.metacafe.com/watch/723476/juggling_tutorial_rainbow_cross/",
-        "title": "Nexus TV (video)"
+        "title": "Nexus TV (video)",
+        "url": "http://www.metacafe.com/watch/723476/juggling_tutorial_rainbow_cross/"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "reverseinfinity",
@@ -588,7 +652,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "shuffle-switch",
@@ -620,15 +686,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=fyMxiKq9SN0",
-        "title": "CissyandtheMan (demonstration)"
+        "title": "CissyandtheMan (demonstration)",
+        "url": "https://www.youtube.com/watch?v=fyMxiKq9SN0"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "half-box441",
-    "name": " 441 (Half-Box)",
+    "name": "441 (Half-Box)",
     "slug": "half-box441",
     "difficulty": 4,
     "numBalls": 3,
@@ -682,56 +750,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=PX_pwp0tdWk",
-        "title": "Expert Village (video)"
+        "title": "Expert Village (video)",
+        "url": "https://www.youtube.com/watch?v=PX_pwp0tdWk"
       }
     ],
-    "librarianLearned": false
-  },
-  {
-    "id": "552",
-    "name": "552",
-    "slug": "552",
-    "difficulty": 8,
-    "numBalls": 4,
-    "category": "4 Ball",
-    "siteswap": "552",
-    "prerequisites": [
-      "Cascade",
-      "Snake"
-    ],
-    "relatedTricks": [],
-    "gifUrl": "/JugglingGifs/4balltricks/552.gif",
-    "description": "The 552 is a four ball pattern in which each hand makes an uninterrupted pair of Cascade-like throws. This gives the pattern an odd asymmetrical-yet-symmetrical feel which separates it from other four ball tricks. The 552 can also be thought of as two two-ball Snakes crossing paths with each other, therefore it is best that you already know the three ball Snake before trying this pattern. To begin learning the 552, start with two balls in your dominant hand and one ball in your non-dominant. Throw the ball in your non-dominant hand across your body, and then make two sequential throws from your dominant hand to your non-dominant hand, clearing space for your dominant hand to catch the first ball. Then catch the other two balls in your non-dominant hand. Practice this on both sides. As you may have noticed, this is really just a portion of the three ball Snake. However, it is also the foundation of the 552. Once you have this step mastered, you are ready to add in the fourth ball. Start with two balls in each hand, then make one throw from your non-dominant hand, followed by two throws from your dominant hand (just as in the previous step). As the first ball from your dominant hand approaches your non-dominant hand, throw the ball the latter hand is holding, clearing space for the other ball to land. Once that ball has been caught, throw it back across your body, making room for the second ball from your dominant hand to be caught. Then catch the rest of the balls. Practice this on both sides. Once you have it mastered, all that's left to run the full 552 is to make another two throws with your dominant hand after the last throw in the step above, starting another cycle. This pattern is enjoyable to juggle in its own right, but is also a great warm up to the Five Ball Cascade.",
-    "tutorialContent": [
-      {
-        "type": "text",
-        "content": "The 552 is a four ball pattern in which each hand makes an uninterrupted pair of Cascade-like throws. This gives the pattern an odd asymmetrical-yet-symmetrical feel which separates it from other four ball tricks. The 552 can also be thought of as two two-ball Snakes crossing paths with each other, therefore it is best that you already know the three ball Snake before trying this pattern. To begin learning the 552, start with two balls in your dominant hand and one ball in your non-dominant. Throw the ball in your non-dominant hand across your body, and then make two sequential throws from your dominant hand to your non-dominant hand, clearing space for your dominant hand to catch the first ball. Then catch the other two balls in your non-dominant hand."
-      },
-      {
-        "type": "gif",
-        "url": "/JugglingGifs/4balltricks/552three.gif"
-      },
-      {
-        "type": "text",
-        "content": "Practice this on both sides. As you may have noticed, this is really just a portion of the three ball Snake. However, it is also the foundation of the 552. Once you have this step mastered, you are ready to add in the fourth ball. Start with two balls in each hand, then make one throw from your non-dominant hand, followed by two throws from your dominant hand (just as in the previous step). As the first ball from your dominant hand approaches your non-dominant hand, throw the ball the latter hand is holding, clearing space for the other ball to land. Once that ball has been caught, throw it back across your body, making room for the second ball from your dominant hand to be caught. Then catch the rest of the balls."
-      },
-      {
-        "type": "gif",
-        "url": "/JugglingGifs/4balltricks/552run.gif"
-      },
-      {
-        "type": "text",
-        "content": "Practice this on both sides. Once you have it mastered, all that's left to run the full 552 is to make another two throws with your dominant hand after the last throw in the step above, starting another cycle. This pattern is enjoyable to juggle in its own right, but is also a great warm up to the Five Ball Cascade."
-      }
-    ],
-    "tutorialLinks": [
-      {
-        "title": "Micah Rowe (video)",
-        "url": "https://www.youtube.com/watch?v=ez3YlwAQkh4"
-      }
-    ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "alsslide",
@@ -779,11 +804,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=8C6VjYyqxAg",
-        "title": "Idiosensory (second trick)"
+        "title": "Idiosensory (second trick)",
+        "url": "https://www.youtube.com/watch?v=8C6VjYyqxAg"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "buffaloshuffle",
@@ -825,11 +852,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/buffalo_shuffle.php",
-        "title": "John Kilgust (demonstration)"
+        "title": "John Kilgust (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/buffalo_shuffle.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "burkesbarrage",
@@ -862,11 +891,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=p1j-ylmP9TY",
-        "title": "eMretsiM (video)"
+        "title": "eMretsiM (video)",
+        "url": "https://www.youtube.com/watch?v=p1j-ylmP9TY"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "chops",
@@ -916,11 +947,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=NaqQmIpWmZo",
-        "title": "ExpertVillage (video)"
+        "title": "ExpertVillage (video)",
+        "url": "https://www.youtube.com/watch?v=NaqQmIpWmZo"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Body Throws",
+    "tags": []
   },
   {
     "id": "crossedarmcascade",
@@ -961,7 +994,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Body Throws",
+    "tags": []
   },
   {
     "id": "crossedarmreversecascade",
@@ -987,11 +1022,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=KYjC9_B6z90",
-        "title": "billi billert (video)"
+        "title": "billi billert (video)",
+        "url": "https://www.youtube.com/watch?v=KYjC9_B6z90"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Body Throws",
+    "tags": []
   },
   {
     "id": "crossunder",
@@ -1033,11 +1070,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut016.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut016.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "davenportshuffle",
@@ -1080,11 +1119,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://claymotionjuggling.com/videos/shuffle/davenport-shuffle.mov",
-        "title": "James J Barlow (demonstration)"
+        "title": "James J Barlow (demonstration)",
+        "url": "http://claymotionjuggling.com/videos/shuffle/davenport-shuffle.mov"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "davidsdilemma",
@@ -1124,11 +1165,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/davids_dilemma.htm",
-        "title": "David Thomas (demonstration)"
+        "title": "David Thomas (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/davids_dilemma.htm"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "follow",
@@ -1170,15 +1213,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut074.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut074.html"
       },
       {
-        "url": "https://www.youtube.com/watch?v=XFSdWigV5jo",
-        "title": "billi billert (demonstration)"
+        "title": "billi billert (demonstration)",
+        "url": "https://www.youtube.com/watch?v=XFSdWigV5jo"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "georgianshuffle",
@@ -1221,15 +1266,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut095.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut095.html"
       },
       {
-        "url": "https://www.youtube.com/watch?v=WVxS1SZwt-w",
-        "title": "Chris Coxon (video)"
+        "title": "Chris Coxon (video)",
+        "url": "https://www.youtube.com/watch?v=WVxS1SZwt-w"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "grace",
@@ -1269,11 +1316,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/grace.php",
-        "title": "Kevin Axtell (demonstration)"
+        "title": "Kevin Axtell (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/grace.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "half-mess",
@@ -1305,11 +1354,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=ow_Cnlhu_ao",
-        "title": "juggleyourballsoff (video)"
+        "title": "juggleyourballsoff (video)",
+        "url": "https://www.youtube.com/watch?v=ow_Cnlhu_ao"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "handsoftime",
@@ -1350,11 +1401,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://youtu.be/qTZvWMbOVlc?t=49s",
-        "title": "Idiosensory (demonstration)"
+        "title": "Idiosensory (demonstration)",
+        "url": "https://youtu.be/qTZvWMbOVlc?t=49s"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Misc",
+    "tags": []
   },
   {
     "id": "high-lowcascade",
@@ -1394,11 +1447,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=yq4hz4E7jGg#t=15",
-        "title": "Chrisbouncyparker (video)"
+        "title": "Chrisbouncyparker (video)",
+        "url": "https://www.youtube.com/watch?v=yq4hz4E7jGg#t=15"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Misc",
+    "tags": []
   },
   {
     "id": "kingofhearts",
@@ -1438,11 +1493,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=7xG2sbPYt1w&amp;list=UUihS_nPuybkG0jKQJf8l3nA&amp;index=22",
-        "title": "Idiosensory (last trick of video)"
+        "title": "Idiosensory (last trick of video)",
+        "url": "https://www.youtube.com/watch?v=7xG2sbPYt1w&amp;list=UUihS_nPuybkG0jKQJf8l3nA&amp;index=22"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "kingstonshuffle",
@@ -1484,11 +1541,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/kingston_shuffle.php",
-        "title": "Greg Phillips (demonstration)"
+        "title": "Greg Phillips (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/kingston_shuffle.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "manghamsmangle",
@@ -1528,11 +1587,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=-uSUfX4qf14",
-        "title": "Draitube (video)"
+        "title": "Draitube (video)",
+        "url": "https://www.youtube.com/watch?v=-uSUfX4qf14"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "mikesmess",
@@ -1564,15 +1625,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut067.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut067.html"
       },
       {
-        "url": "https://www.youtube.com/watch?v=Y4Ud-LFANHw",
-        "title": "eMretsiM (video)"
+        "title": "eMretsiM (video)",
+        "url": "https://www.youtube.com/watch?v=Y4Ud-LFANHw"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "pendulumdrop",
@@ -1583,7 +1646,7 @@
     "category": "3 Ball",
     "siteswap": "(4x,2x)(4,2)",
     "prerequisites": [
-      "Two in one"
+      "Two in One"
     ],
     "relatedTricks": [
       "Factory",
@@ -1607,11 +1670,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=18tVYxlgvus",
-        "title": "billi billert (demonstration)"
+        "title": "billi billert (demonstration)",
+        "url": "https://www.youtube.com/watch?v=18tVYxlgvus"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "penmanspandemonium",
@@ -1654,11 +1719,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/penmans_pandemonium.php",
-        "title": "William Penman (demonstration)"
+        "title": "William Penman (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/penmans_pandemonium.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "reverse441half-box",
@@ -1684,11 +1751,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=7ftzJw6dEXI",
-        "title": "UploaderTVNet (demonstration)"
+        "title": "UploaderTVNet (demonstration)",
+        "url": "https://www.youtube.com/watch?v=7ftzJw6dEXI"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "reversecascade",
@@ -1723,11 +1792,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=mPkGlf5uNsw",
-        "title": "Expert Village (video)"
+        "title": "Expert Village (video)",
+        "url": "https://www.youtube.com/watch?v=mPkGlf5uNsw"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "reversechops",
@@ -1768,11 +1839,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=y-E4Ijb1v8k",
-        "title": "ExpertVillage (video)"
+        "title": "ExpertVillage (video)",
+        "url": "https://www.youtube.com/watch?v=y-E4Ijb1v8k"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Body Throws",
+    "tags": []
   },
   {
     "id": "reversecrossunder",
@@ -1814,11 +1887,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut123.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut123.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Body Throws",
+    "tags": []
   },
   {
     "id": "reversefactory",
@@ -1868,11 +1943,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=8hVNRRPnNns",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=8hVNRRPnNns"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "ripleysrainbow",
@@ -1912,11 +1989,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=juQ30Frd1JA",
-        "title": "Cliff Ripley (video)"
+        "title": "Cliff Ripley (video)",
+        "url": "https://www.youtube.com/watch?v=juQ30Frd1JA"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Misc",
+    "tags": []
   },
   {
     "id": "rolfswave",
@@ -1957,11 +2036,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut114.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut114.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "shower-cascade",
@@ -2001,15 +2082,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut109.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut109.html"
       },
       {
-        "url": "https://www.youtube.com/watch?v=-afp-2FL4Dw",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=-afp-2FL4Dw"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "singaporeshuffle",
@@ -2051,11 +2134,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/singapore_shuffle.htm",
-        "title": "Todd Strong (text-based)"
+        "title": "Todd Strong (text-based)",
+        "url": "http://www.toddstrong.com/balljuggling/singapore_shuffle.htm"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "snake",
@@ -2087,11 +2172,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=GmWduPjtIcg",
-        "title": "TriWaZe (video)"
+        "title": "TriWaZe (video)",
+        "url": "https://www.youtube.com/watch?v=GmWduPjtIcg"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "statueofliberty",
@@ -2131,11 +2218,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=AVKnIjnvk7c",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=AVKnIjnvk7c"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "takeouts",
@@ -2185,11 +2274,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=p1j-ylmP9TY",
-        "title": "eMretsiM (video)"
+        "title": "eMretsiM (video)",
+        "url": "https://www.youtube.com/watch?v=p1j-ylmP9TY"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "triazzle",
@@ -2253,11 +2344,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=hXuvWsv7faY",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=hXuvWsv7faY"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "truffleshuffle",
@@ -2268,7 +2361,7 @@
     "category": "3 Ball",
     "siteswap": "(6,2)(2x,2x)",
     "prerequisites": [
-      "\n\tShuffle-Switch"
+      "Shuffle-Switch"
     ],
     "relatedTricks": [],
     "gifUrl": "/JugglingGifs/3balltricks/truffleshuffle.gif",
@@ -2297,11 +2390,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=kFxv-uQFHeU",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=kFxv-uQFHeU"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "weave",
@@ -2342,11 +2437,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=1bxJ5Ejw848",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=1bxJ5Ejw848"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "531",
@@ -2402,11 +2499,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=NfxOJv_mBfI",
-        "title": "Expert Village (video)"
+        "title": "Expert Village (video)",
+        "url": "https://www.youtube.com/watch?v=NfxOJv_mBfI"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "5551",
@@ -2417,7 +2516,7 @@
     "category": "4 Ball",
     "siteswap": "5551",
     "prerequisites": [
-      "\n\tCascade",
+      "\tCascade",
       "Shower"
     ],
     "relatedTricks": [
@@ -2441,11 +2540,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=M8tUdMERBxU",
-        "title": "ctjuggles (video)"
+        "title": "ctjuggles (video)",
+        "url": "https://www.youtube.com/watch?v=M8tUdMERBxU"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "55550",
@@ -2479,11 +2580,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=GaZe_11SFHU",
-        "title": "JuugEnterprise (demonstration)"
+        "title": "JuugEnterprise (demonstration)",
+        "url": "https://www.youtube.com/watch?v=GaZe_11SFHU"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "bostonshuffle",
@@ -2534,11 +2637,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=DSM9RNFA3Ic",
-        "title": "eMretsiM (video)"
+        "title": "eMretsiM (video)",
+        "url": "https://www.youtube.com/watch?v=DSM9RNFA3Ic"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "brokenshower",
@@ -2588,7 +2693,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "burkesslam",
@@ -2603,7 +2710,7 @@
       "Takeouts"
     ],
     "relatedTricks": [
-      "Burke's \n\tBarrage"
+      "Burke's Barrage"
     ],
     "gifUrl": "/JugglingGifs/3balltricks/burkesslam.gif",
     "description": "Burke's Slam is a variation of the Boston Shuffle in which the slammed ball is carried around and over the rest of the pattern, as if juggling Takeouts; the name \"Burke's Slam\" likely arose due to the common confusion between Burke's Barrage and Takeouts. It is important that you already have some experience with both the Boston Shuffle and Takeouts before attempting Burke's Slam. To begin learning Burke's Slam, start with one ball in your dominant hand and two balls in your non-dominant hand. Cross your hands such that your dominant arm is over your non-dominant arm, then make a vertical throw from your non-dominant hand. At the same time, you are going to uncross your arms and swing your dominant hand up and over the thrown ball, which should just be reaching its peak. As that ball begins to descend, you are going to make a slam throw (diagonal pass) from your dominant hand down to your non-dominant hand, clearing space for your dominant hand to claw-catch the descending vertical ball. As the slam throw is being performed, you are also going to throw the ball in your non-dominant hand over the slammed ball and toward the dominant side of your body. This will clear space for your non-dominant hand to catch the slammed ball, after which you will catch the last ball with your dominant hand. As shown, practice this on both sides. To continue the pattern, just make another vertical under-the-arm throw, this time with your dominant hand, using the slammed ball. You will then make a slam throw from your non-dominant hand, and the trick will continue on from there. Burke's Slam is a very easy pattern to learn if you are already familiar with the Boston Shuffle, and is quite fun to juggle.",
@@ -2623,11 +2730,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut064.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut064.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "charley",
@@ -2638,7 +2747,7 @@
     "category": "3 Ball",
     "siteswap": "3",
     "prerequisites": [
-      "\n\tCrossed-Arm Cascade",
+      "Crossed-Arm Cascade",
       "Crossed-Arm Reverse Cascade",
       "Mills Mess"
     ],
@@ -2669,11 +2778,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://unknownjuggling.tripod.com/september/charleynew.wmv",
-        "title": "William Penman (video clip)"
+        "title": "William Penman (video clip)",
+        "url": "http://unknownjuggling.tripod.com/september/charleynew.wmv"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "columnboxvar",
@@ -2685,10 +2796,10 @@
     "siteswap": "(6,6)(2x,0)(0,4)*",
     "prerequisites": [
       "Columns",
-      "441"
+      "441 (Half-Box)"
     ],
     "relatedTricks": [
-      "Shower Variation"
+      "Columns: Shower Variation"
     ],
     "gifUrl": "/JugglingGifs/3balltricks/columnsbox.gif",
     "description": "The Box variation of the Columns pattern is a little trick I came up while trying out variations on the standard pattern—though the trick itself has been performed by others before me. The pattern is exactly as it sounds: a fusion of the Box and Columns. There is not all that much to this trick, and thus a tutorial is not really necessary. As long as you are comfortable with Columns and a basic pattern with a horizontal pass (i.e. 441), then you should not have much trouble learning this pattern.",
@@ -2699,7 +2810,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "columnshowvar",
@@ -2723,7 +2836,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "crossedarmfactory",
@@ -2771,11 +2886,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut107.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut107.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "flippedmess",
@@ -2815,11 +2932,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/flipped_mills_mess.php",
-        "title": "William Penman (demonstration)"
+        "title": "William Penman (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/flipped_mills_mess.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "flosmess",
@@ -2861,15 +2980,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut059.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut059.html"
       },
       {
-        "url": "https://www.youtube.com/watch?v=iyrz7vIk6Ys",
-        "title": "Draitube (video)"
+        "title": "Draitube (video)",
+        "url": "https://www.youtube.com/watch?v=iyrz7vIk6Ys"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "flyingdiscodrop",
@@ -2919,11 +3040,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=xHecfyCrbGY",
-        "title": "Idiosensory (demonstration)"
+        "title": "Idiosensory (demonstration)",
+        "url": "https://www.youtube.com/watch?v=xHecfyCrbGY"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Misc",
+    "tags": []
   },
   {
     "id": "forklift",
@@ -2971,11 +3094,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=lk1ozCp7yVg",
-        "title": "Guillaume Riesen (video"
+        "title": "Guillaume Riesen (video",
+        "url": "https://www.youtube.com/watch?v=lk1ozCp7yVg"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "fourballcolumns",
@@ -2986,7 +3111,7 @@
     "category": "4 Ball",
     "siteswap": "(4,4)",
     "prerequisites": [
-      "Synch. Fountain",
+      "Synchronous Fountain",
       "Columns"
     ],
     "relatedTricks": [
@@ -3018,11 +3143,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/4bsyncolumns.php",
-        "title": "Todd Strong (demonstration)"
+        "title": "Todd Strong (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/4bsyncolumns.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "fourballtakeouts",
@@ -3063,11 +3190,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=CUe6s5hH2y4",
-        "title": "eMretsiM (video)"
+        "title": "eMretsiM (video)",
+        "url": "https://www.youtube.com/watch?v=CUe6s5hH2y4"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Multiplex",
+    "tags": []
   },
   {
     "id": "frances",
@@ -3078,7 +3207,7 @@
     "category": "3 Ball",
     "siteswap": "(4x,2x)(2,4x)(4,2)*",
     "prerequisites": [
-      "Romeo's \n\tRevenge",
+      "Romeo's Revenge",
       "Sandbox Shuffle"
     ],
     "relatedTricks": [],
@@ -3100,11 +3229,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=Yozjod7z3fU",
-        "title": "Guillaume Riesen (wrong name)"
+        "title": "Guillaume Riesen (wrong name)",
+        "url": "https://www.youtube.com/watch?v=Yozjod7z3fU"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "georgianscuffle",
@@ -3147,11 +3278,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=HgiMI46j0WY",
-        "title": "Steve Hoggan (video)"
+        "title": "Steve Hoggan (video)",
+        "url": "https://www.youtube.com/watch?v=HgiMI46j0WY"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "high-lowshower",
@@ -3185,11 +3318,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=HSnl8FrmF20",
-        "title": "billi billert (demonstration)"
+        "title": "billi billert (demonstration)",
+        "url": "https://www.youtube.com/watch?v=HSnl8FrmF20"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "icelandicshuffle",
@@ -3238,11 +3373,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=KyeEbajXzZE",
-        "title": "Beejay Joyer (demonstration)"
+        "title": "Beejay Joyer (demonstration)",
+        "url": "https://www.youtube.com/watch?v=KyeEbajXzZE"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "katoscrux",
@@ -3282,11 +3419,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://youtu.be/qTZvWMbOVlc?",
-        "title": "Idiosensory (demonstration)"
+        "title": "Idiosensory (demonstration)",
+        "url": "https://youtu.be/qTZvWMbOVlc?"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "lisa",
@@ -3297,7 +3436,7 @@
     "category": "4 Ball",
     "siteswap": "(4,2)(2x,[4x4])*",
     "prerequisites": [
-      "441",
+      "441 (Half-Box)",
       "Four Ball Columns"
     ],
     "relatedTricks": [],
@@ -3327,11 +3466,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://unknownjuggling.tripod.com/november/lisa.wmv",
-        "title": "William Penman (video clip)"
+        "title": "William Penman (video clip)",
+        "url": "http://unknownjuggling.tripod.com/november/lisa.wmv"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Multiplex",
+    "tags": []
   },
   {
     "id": "makasmess",
@@ -3373,11 +3514,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://youtu.be/jJA_nd8q6QA?t=1m9s",
-        "title": "Idiosensory (demonstration)"
+        "title": "Idiosensory (demonstration)",
+        "url": "https://youtu.be/jJA_nd8q6QA?t=1m9s"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "mattsmess",
@@ -3410,11 +3553,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut060.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut060.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "millsmess",
@@ -3470,11 +3615,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=GiMHQ7nOa0k",
-        "title": "TonySteinbach (video)"
+        "title": "TonySteinbach (video)",
+        "url": "https://www.youtube.com/watch?v=GiMHQ7nOa0k"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "millsmessshower",
@@ -3507,11 +3654,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=yIvaU2bY9Wg",
-        "title": "Draitube (video)"
+        "title": "Draitube (video)",
+        "url": "https://www.youtube.com/watch?v=yIvaU2bY9Wg"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "nelsonsnemesis",
@@ -3552,11 +3701,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=cD0z-VXsF_g",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=cD0z-VXsF_g"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "orinocoflow",
@@ -3596,11 +3747,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut079.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut079.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "orkasmess",
@@ -3640,11 +3793,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=Iv4U7EHWMKc",
-        "title": "Draitube (video)"
+        "title": "Draitube (video)",
+        "url": "https://www.youtube.com/watch?v=Iv4U7EHWMKc"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "petersshuffle",
@@ -3685,11 +3840,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut106.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut106.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "relfsfactory",
@@ -3730,11 +3887,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut020.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut020.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "relfsrevenge",
@@ -3778,11 +3937,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut076.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut076.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "reversemillsmess",
@@ -3830,11 +3991,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=GdYR6UjRW_c",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=GdYR6UjRW_c"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "sandboxshuffle",
@@ -3877,11 +4040,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=WTZkV8yZEiE",
-        "title": "Roma76811 (video)"
+        "title": "Roma76811 (video)",
+        "url": "https://www.youtube.com/watch?v=WTZkV8yZEiE"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "shower",
@@ -3940,11 +4105,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=mG15Qra2hE4",
-        "title": "Roma76811 (video)"
+        "title": "Roma76811 (video)",
+        "url": "https://www.youtube.com/watch?v=mG15Qra2hE4"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "showerswapvariation",
@@ -3979,11 +4146,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=t6U3IQ4VJUg",
-        "title": "asf360 (first trick)"
+        "title": "asf360 (first trick)",
+        "url": "https://www.youtube.com/watch?v=t6U3IQ4VJUg"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "shufflersmess",
@@ -4025,11 +4194,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=EJfLU2j__WQ&amp;",
-        "title": "Idiosensory (demonstration)"
+        "title": "Idiosensory (demonstration)",
+        "url": "https://www.youtube.com/watch?v=EJfLU2j__WQ&amp;"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "symmetricgeorgianshuffle",
@@ -4071,11 +4242,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=2x_J6B8R_iM",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=2x_J6B8R_iM"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "tomstrick",
@@ -4116,11 +4289,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=Aq6au8YFsKs",
-        "title": "Thomas Wood (demonstration)"
+        "title": "Thomas Wood (demonstration)",
+        "url": "https://www.youtube.com/watch?v=Aq6au8YFsKs"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "underarmshower",
@@ -4161,7 +4336,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "wimpy",
@@ -4195,11 +4372,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=zjJASnvfn-I",
-        "title": "craig6244 (video)"
+        "title": "craig6244 (video)",
+        "url": "https://www.youtube.com/watch?v=zjJASnvfn-I"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "windmill",
@@ -4210,7 +4389,7 @@
     "category": "3 Ball",
     "siteswap": "3",
     "prerequisites": [
-      "Reverse \n\tCascade",
+      "Reverse Cascade",
       "Mills Mess"
     ],
     "relatedTricks": [
@@ -4242,11 +4421,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=841vSdqx9d8",
-        "title": "ashomsky (video)"
+        "title": "ashomsky (video)",
+        "url": "https://www.youtube.com/watch?v=841vSdqx9d8"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Misc",
+    "tags": []
   },
   {
     "id": "441millsmess",
@@ -4287,11 +4468,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=NXrxgmk6tZU",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=NXrxgmk6tZU"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "531millsmess",
@@ -4348,11 +4531,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=oli5Oq6WLRs",
-        "title": "eMretsiM (video)"
+        "title": "eMretsiM (video)",
+        "url": "https://www.youtube.com/watch?v=oli5Oq6WLRs"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "arrowofasai",
@@ -4401,15 +4586,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=Pn41pwLUfco",
-        "title": "Daniel Marden (last trick)"
+        "title": "Daniel Marden (last trick)",
+        "url": "https://www.youtube.com/watch?v=Pn41pwLUfco"
       },
       {
-        "url": "../../JugglingGifs/3balltricks/ArrowOfAsai.AVI",
-        "title": "Other demonstration (video clip)"
+        "title": "Other demonstration (video clip)",
+        "url": "../../JugglingGifs/3balltricks/ArrowOfAsai.AVI"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Multiplex",
+    "tags": []
   },
   {
     "id": "bostonmess",
@@ -4452,11 +4639,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=klfMQs0rLos",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=klfMQs0rLos"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "box",
@@ -4467,11 +4656,11 @@
     "category": "3 Ball",
     "siteswap": "(4,2x)(2x,4)",
     "prerequisites": [
-      "441 \n\t(Half-Box)",
+      "441 (Half-Box)",
       "Shower"
     ],
     "relatedTricks": [
-      "Luke's \n\tShuffle",
+      "Luke's Shuffle",
       "N-Box"
     ],
     "gifUrl": "/JugglingGifs/3balltricks/box.gif",
@@ -4508,11 +4697,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=HKjgUPwIiFs",
-        "title": "MGZolyn (video)"
+        "title": "MGZolyn (video)",
+        "url": "https://www.youtube.com/watch?v=HKjgUPwIiFs"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "brokenbox",
@@ -4524,8 +4715,9 @@
     "siteswap": "(4,2x)*",
     "prerequisites": [
       "Box",
-      "Shower-Cascade",
-      "Burst Box"
+      "Shower",
+      "Burst Box",
+      "Cascade"
     ],
     "relatedTricks": [],
     "gifUrl": "/JugglingGifs/3balltricks/brokenbox.gif",
@@ -4562,11 +4754,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/broken_box.php",
-        "title": "Michael Karas (demonstration)"
+        "title": "Michael Karas (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/broken_box.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "burstbox",
@@ -4599,11 +4793,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=ny-nqsRKylM",
-        "title": "UberMathNerd (video)"
+        "title": "UberMathNerd (video)",
+        "url": "https://www.youtube.com/watch?v=ny-nqsRKylM"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "cherrypicker",
@@ -4627,11 +4823,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=JkjQFVTPmZA",
-        "title": "Meagan Nouis (video)"
+        "title": "Meagan Nouis (video)",
+        "url": "https://www.youtube.com/watch?v=JkjQFVTPmZA"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "chopshower",
@@ -4680,11 +4878,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=ifrtHqa0d2g",
-        "title": "Andrew Olson (video)"
+        "title": "Andrew Olson (video)",
+        "url": "https://www.youtube.com/watch?v=ifrtHqa0d2g"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "cliffsconfusion",
@@ -4724,11 +4924,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/cliffsconfusion.php",
-        "title": "Todd Strong (demonstration)"
+        "title": "Todd Strong (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/cliffsconfusion.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Multiplex",
+    "tags": []
   },
   {
     "id": "compressedolas",
@@ -4760,11 +4962,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.olalofberg.se/aqua/olasbang.mov",
-        "title": "Ola Löfberg (end of video)"
+        "title": "Ola Löfberg (end of video)",
+        "url": "http://www.olalofberg.se/aqua/olasbang.mov"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "danceysdevilment",
@@ -4804,15 +5008,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://members.tripod.com/~colin_e/dancey.html",
-        "title": "Colin Eberhardt (demonstration)"
+        "title": "Colin Eberhardt (demonstration)",
+        "url": "http://members.tripod.com/~colin_e/dancey.html"
       },
       {
-        "url": "http://www.olalofberg.se/aqua/dancey.avi",
-        "title": "Ola Löfberg (video clip)"
+        "title": "Ola Löfberg (video clip)",
+        "url": "http://www.olalofberg.se/aqua/dancey.avi"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Multiplex",
+    "tags": []
   },
   {
     "id": "extendedbox",
@@ -4844,11 +5050,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=CtkXclJnULA",
-        "title": "AKDiamond157 (demonstration)"
+        "title": "AKDiamond157 (demonstration)",
+        "url": "https://www.youtube.com/watch?v=CtkXclJnULA"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "fiveballsplitmultiplexcascade",
@@ -4862,7 +5070,7 @@
       "Cascade"
     ],
     "relatedTricks": [
-      "Stacked Multiplex Cascade"
+      "Five Ball Stacked Multiplex Cascade"
     ],
     "gifUrl": "/JugglingGifs/5balltricks/fiveballsplitmultiplexcascade.gif",
     "description": "The Five Ball Split Multiplex Cascade is essentially a three ball Cascade where every normal throw is paired with a vertical throw that returns to the same hand. This is the split multiplex, which adds a layer of complexity without making the pattern that much harder. As such, the Five Ball Split Multiplex Cascade is probably one of the easiest tricks that can be done with five balls. To learn the Five Ball Split Multiplex Cascade, start with two balls in each hand. Make a split multiplex from your dominant hand such that one ball travels across your body while the other ball stays roughly in line with your dominant hand. As the ball thrown across your body approaches your non-dominant hand, and as the vertical ball from the multiplex approaches your dominant hand, make a second, identical, multiplex from your non-dominant hand, clearing space for you to catch that first ball. Then catch the rest of the balls. As shown, practice this on both sides. While the animations in this tutorial all show the two balls being thrown at different heights, this is a purely stylistic choice, as many jugglers throw both balls at equal heights. Once you can make these two multiplex throws consistently, it is time to add in the fifth ball. Start with three balls in your dominant hand and two balls in your non-dominant. Make a single Cascade throw from your dominant hand, and then make a split multiplex from your non-dominant hand, clearing space for your hand to catch the first ball. As the ball from that multiplex approaches your dominant hand, make a second split multiplex and catch that ball. Then catch the rest of the balls. Once you have this first cycle mastered, you simply need to keep making split multiplexes and you will be running the full Five Ball Split Multiplex Cascade.",
@@ -4889,7 +5097,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Multiplex",
+    "tags": []
   },
   {
     "id": "fourballhalfshower",
@@ -4932,11 +5142,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=IpIYh_459SE",
-        "title": "JugglingStein (video)"
+        "title": "JugglingStein (video)",
+        "url": "https://www.youtube.com/watch?v=IpIYh_459SE"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "fourballrainbowcross",
@@ -4960,7 +5172,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "franticcascade",
@@ -5000,15 +5214,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=PH81rH8mxUc",
-        "title": "Steve Hoggan (video)"
+        "title": "Steve Hoggan (video)",
+        "url": "https://www.youtube.com/watch?v=PH81rH8mxUc"
       },
       {
-        "url": "https://www.youtube.com/watch?v=1Rvc0qT5BRk",
-        "title": "Meagan Nouis (video)"
+        "title": "Meagan Nouis (video)",
+        "url": "https://www.youtube.com/watch?v=1Rvc0qT5BRk"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Body Throws",
+    "tags": []
   },
   {
     "id": "frostbite",
@@ -5069,11 +5285,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=UpTUpHQlMas",
-        "title": "Andrew Olson (demonstration)"
+        "title": "Andrew Olson (demonstration)",
+        "url": "https://www.youtube.com/watch?v=UpTUpHQlMas"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "gilligansbox",
@@ -5105,11 +5323,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/gilligans_box.php",
-        "title": "Michael Karas (demonstration)"
+        "title": "Michael Karas (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/gilligans_box.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "harrisonshang",
@@ -5120,7 +5340,7 @@
     "category": "3 Ball",
     "siteswap": "(4,2x)(4,2)*",
     "prerequisites": [
-      " 441",
+      " 441 (Half-Box)",
       "Penman's Pandemonium"
     ],
     "relatedTricks": [],
@@ -5150,11 +5370,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut080.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut080.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "jeanne",
@@ -5165,7 +5387,7 @@
     "category": "3 Ball",
     "siteswap": "(4,4)(4x,0)(2,4x)(4x,2)*",
     "prerequisites": [
-      "Orka's Mes",
+      "Orka's Mess",
       "Rubenstein's Revenge"
     ],
     "relatedTricks": [],
@@ -5187,11 +5409,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://unknownjuggling.tripod.com/october/jeanne.wmv",
-        "title": "William Penman (demonstration)"
+        "title": "William Penman (demonstration)",
+        "url": "http://unknownjuggling.tripod.com/october/jeanne.wmv"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "kraken",
@@ -5256,11 +5480,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=K8rw8gxM2CA",
-        "title": "Beejay Joyer (video)"
+        "title": "Beejay Joyer (video)",
+        "url": "https://www.youtube.com/watch?v=K8rw8gxM2CA"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "lukeslobotomy",
@@ -5301,11 +5527,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.lukeburrage.com/archive/juggling/videos/lobotomy.mpg",
-        "title": "Luke Burrage (demonstration)"
+        "title": "Luke Burrage (demonstration)",
+        "url": "http://www.lukeburrage.com/archive/juggling/videos/lobotomy.mpg"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Body Throws",
+    "tags": []
   },
   {
     "id": "mardensmarvel",
@@ -5346,11 +5574,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=100dErxddQ4",
-        "title": "Daniel Marden (demonstration)"
+        "title": "Daniel Marden (demonstration)",
+        "url": "https://www.youtube.com/watch?v=100dErxddQ4"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "martin",
@@ -5388,11 +5618,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=sic7vlztqxI",
-        "title": "EncicloJuggling (video"
+        "title": "EncicloJuggling (video",
+        "url": "https://www.youtube.com/watch?v=sic7vlztqxI"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Misc",
+    "tags": []
   },
   {
     "id": "olas",
@@ -5446,15 +5678,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut094.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut094.html"
       },
       {
-        "url": "https://www.youtube.com/watch?v=qXVI1vj-zUg",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=qXVI1vj-zUg"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Non-continuous",
+    "tags": []
   },
   {
     "id": "penmansbox",
@@ -5495,11 +5729,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/penmans_pandemonium_horizontal.php",
-        "title": "William Penman (demonstration)"
+        "title": "William Penman (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/penmans_pandemonium_horizontal.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "relfsrevenge6",
@@ -5541,11 +5777,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut077.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut077.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "relfsrubensteins",
@@ -5588,11 +5826,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut078.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut078.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "romeosrevenge",
@@ -5632,15 +5872,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=UX9GZKa6rqg",
-        "title": "eMretsiM (video)"
+        "title": "eMretsiM (video)",
+        "url": "https://www.youtube.com/watch?v=UX9GZKa6rqg"
       },
       {
-        "url": "https://www.youtube.com/watch?v=3wvqC4iWuh0",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=3wvqC4iWuh0"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "rubensteinsrevenge",
@@ -5682,11 +5924,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=lIbO8_WPxzo",
-        "title": "TheOmnipotentJuggler (video)"
+        "title": "TheOmnipotentJuggler (video)",
+        "url": "https://www.youtube.com/watch?v=lIbO8_WPxzo"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "swapbox",
@@ -5719,11 +5963,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut040.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut040.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "switchedbox",
@@ -5757,11 +6003,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://youtu.be/rS2EezF-reE?t=42s",
-        "title": "eMrestiM (demonstration)"
+        "title": "eMrestiM (demonstration)",
+        "url": "https://youtu.be/rS2EezF-reE?t=42s"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "symmetricgeorgianscuffle",
@@ -5804,11 +6052,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=HgiMI46j0WY",
-        "title": "Steve Hoggan (video)"
+        "title": "Steve Hoggan (video)",
+        "url": "https://www.youtube.com/watch?v=HgiMI46j0WY"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "synchpistons",
@@ -5842,11 +6092,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.kingscascade.com/4BallPistons.html",
-        "title": "ExpertVillage (called Columns)"
+        "title": "ExpertVillage (called Columns)",
+        "url": "http://www.kingscascade.com/4BallPistons.html"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "takearound",
@@ -5887,11 +6139,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=cUfOLJbIMQ4#t=174",
-        "title": "Andrew Olson (demonstration)"
+        "title": "Andrew Olson (demonstration)",
+        "url": "https://www.youtube.com/watch?v=cUfOLJbIMQ4#t=174"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "tennesseewaltz",
@@ -5940,11 +6194,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/tennessee_waltz.php",
-        "title": "Cliff Wurst (demonstration)"
+        "title": "Cliff Wurst (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/tennessee_waltz.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Multiplex",
+    "tags": []
   },
   {
     "id": "threadedbox",
@@ -5984,11 +6240,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/threading_the_box.php",
-        "title": "Michael Karas (demonstration)"
+        "title": "Michael Karas (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/threading_the_box.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "underarmbox",
@@ -6030,11 +6288,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/underarm_box.php",
-        "title": "Michael Karas (demonstration)"
+        "title": "Michael Karas (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/underarm_box.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "zebrafactory",
@@ -6074,7 +6334,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Columns",
+    "tags": []
   },
   {
     "id": "534",
@@ -6115,11 +6377,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=CHqt7ZdN51U",
-        "title": "MetalJuggler1417 (video)"
+        "title": "MetalJuggler1417 (video)",
+        "url": "https://www.youtube.com/watch?v=CHqt7ZdN51U"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "alex",
@@ -6131,7 +6395,7 @@
     "siteswap": "(4x,2x)(2T,4x)*",
     "prerequisites": [
       "531 Mills Mess",
-      "Orca's Mess"
+      "Orka's Mess"
     ],
     "relatedTricks": [],
     "gifUrl": "/JugglingGifs/3balltricks/alex.gif",
@@ -6168,11 +6432,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://unknownjuggling.tripod.com/february/alex.wmv",
-        "title": "William Penman (video clip)"
+        "title": "William Penman (video clip)",
+        "url": "http://unknownjuggling.tripod.com/february/alex.wmv"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "arches",
@@ -6203,7 +6469,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "backcrosses",
@@ -6259,11 +6527,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=5PFTcLqhhXA",
-        "title": "JugglingStein (video)"
+        "title": "JugglingStein (video)",
+        "url": "https://www.youtube.com/watch?v=5PFTcLqhhXA"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Body Throws",
+    "tags": []
   },
   {
     "id": "bizarrebox",
@@ -6321,11 +6591,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/bizarre_box.php",
-        "title": "Michael Karas (demonstration)"
+        "title": "Michael Karas (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/bizarre_box.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "crossedarmshower",
@@ -6339,7 +6611,7 @@
       "Shower"
     ],
     "relatedTricks": [
-      "Reverse Variation"
+      "Reverse Crossed-Arm Shower"
     ],
     "gifUrl": "/JugglingGifs/3balltricks/crossedarmshower.gif",
     "description": "The Crossed-Arm Shower is, as its name suggests, a variation of the Shower pattern in which your arms are crossed. The overall shape of the pattern is virtually unchanged (though usually smaller), so conceptually the trick is fairly simple. The main difficulty comes from learning how to make horizontal passes from a crossed-arm position—a very unusual throw type not present in most juggling tricks. The hand that throws these passes can be crossed over or under, but for this tutorial I am going to consider the crossed-over form as standard, and the crossed-under form as the \"Reverse Variation.\" To begin learning the Crossed-Arm Shower, start with one ball in your dominant hand and then cross your arms such that your dominant arm is on top. Without uncrossing your arms, make a horizontal pass from your dominant hand to your non-dominant hand. You will want to make this a forceful throw along a straight line—the ball should not be lightly tossed, as might be your first instinct. Practice this until the throw feels natural. Unlike in the animation, you could also practice passing the ball back from the hand crossed under, as it is the quickest way to return the ball to your dominant hand. To add in the second ball, you are going to start with one ball in each hand and your arms crossed in the same configuration as before. You will then perform an under-the-arm throw from your non-dominant hand toward your dominant hand while simultaneously making a horizontal pass from your dominant hand to your non-dominant hand (as was practiced in the first step), catching the under-the-arm throw with your now empty dominant hand. Practice this extensively. Next, we are going to extend the second step such that, after making its first under-the-arm throw, your non-dominant hand will make another throw using the ball passed by your dominant hand. Your dominant hand will then catch the first under-the-arm throw and quickly pass it back to your non-dominant hand, clearing space for your dominant hand to catch the second throw. Practice this until you can do all of the throws comfortably and consistently. To add in the third ball, start with two balls in your non-dominant hand and one ball in your dominant hand. Cross your arms in the same configuration as before, then make an under-the-arm throw from your non-dominant hand. As that ball peaks and begins to descend, you will make a second throw from your non-dominant hand while simultaneously passing the ball in your dominant hand to your non-dominant hand. This will clear space for your dominant hand to catch the first under-the-arm throw. Your dominant hand will then also catch the second ball thrown from your non-dominant hand. As always, practice this step until you are comfortable with it. To continue the pattern, simply make another pass/under-the-arm-throw combination and then keep adding them in as you become more proficient. The Crossed-Arm Shower is an enjoyable pattern in its own right, but its real value lies in unlocking three ball tricks that utilize a crossed-arm horizontal pass (e.g. non-standard versions of the 441 and 531 Mills Mess).",
@@ -6382,7 +6654,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "fiveballmultiplexcolumns",
@@ -6422,11 +6696,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=zxhAPd9gcQU",
-        "title": "MrJugglr (video)"
+        "title": "MrJugglr (video)",
+        "url": "https://www.youtube.com/watch?v=zxhAPd9gcQU"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Multiplex",
+    "tags": []
   },
   {
     "id": "fiveballstackedmultiplexcascade",
@@ -6466,11 +6742,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=Ztf3MGt4sYQ",
-        "title": "Zendays (third trick)"
+        "title": "Zendays (third trick)",
+        "url": "https://www.youtube.com/watch?v=Ztf3MGt4sYQ"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Multiplex",
+    "tags": []
   },
   {
     "id": "fountain",
@@ -6481,7 +6759,7 @@
     "category": "4 Ball",
     "siteswap": "4",
     "prerequisites": [
-      "441(Half-Box)"
+      "441 (Half-Box)"
     ],
     "relatedTricks": [
       "Reverse Fountain"
@@ -6512,15 +6790,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.jugglingpoet.com/crju/jugfour.html",
-        "title": "Juggling Poet (text-based)"
+        "title": "Juggling Poet (text-based)",
+        "url": "http://www.jugglingpoet.com/crju/jugfour.html"
       },
       {
-        "url": "https://www.youtube.com/watch?v=MEWq_5I3eXc",
-        "title": "JugglingStein (video)"
+        "title": "JugglingStein (video)",
+        "url": "https://www.youtube.com/watch?v=MEWq_5I3eXc"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "fourballbox",
@@ -6536,7 +6816,7 @@
       "Sprung Cascade"
     ],
     "relatedTricks": [
-      "Stacked variation"
+      "Four Ball Stacked Box"
     ],
     "gifUrl": "/JugglingGifs/4balltricks/fourballbox.gif",
     "description": "The Four Ball Box is, as it sounds, a four ball version of the Box pattern, which is normally juggled with three balls. However, the Four Ball Box differs from its little brother in two major respects. Unlike in the regular Box, horizontal passes do not simply alternate direction, but instead occur in pairs, with two balls being tossed to the same hand sequentially. Similarly, the outside throws do not simply consist of one ball thrown vertically, but instead follow a Three in One-style trajectory, with two balls in the air at any given time. These differences make the Four Ball Box more complicated than the regular Box, though the trick is still relatively easy compared to other four ball patterns. To learn the Four Ball Box, it is best to begin with a simpler three ball pattern. Start with two balls in your dominant hand and one ball in your non-dominant. Make two sequential throws from your dominant hand, as if juggling the Three in One. As you are doing the second throw, make a horizontal pass from your non-dominant hand to your dominant hand. At this point, all three balls should be on the dominant side of your body. As the first ball thrown approaches your dominant hand, you are going to pass back the ball in that hand to your non-dominant hand, clearing space for you to catch the first ball, after which you will catch the second ball. Since these throws form the core of the Four Ball Box, it is important that you practice them extensively on both sides. Once your are proficient on each side, you can chain the two sides together. After you pass back the third ball to your non-dominant hand (the last throw of the previous step), you are going to throw it up in air and repeat the same throws done in the previous, except on the opposite side of your body. The horizontal passes should be made just after each ball from the previous step returns to your dominant hand. Practice this extensively. To add in the fourth ball, start with two balls in each hand. Make the same two vertical throws and horizontal pass that you did in step one, and then, as the first ball approaches your dominant hand, throw the ball in your non-dominant hand vertically and make a horizontal pass from your dominant hand to your non-dominant hand, clearing space for your dominant hand to catch the first ball. Immediately after the ball is caught, make another vertical throw from your non-dominant hand while also making a second pass to your non-dominant hand using the ball that your dominant hand just caught. At this point, the last vertical ball thrown from your dominant hand should be caught, and there should be one ball in your non-dominant hand and two balls in the air above it. As the first of those balls in the air descends toward your non-dominant hand, make a pass back to your dominant hand and catch that ball. Then catch the second ball that was in the air. Practice this on both sides. To run the full Four Ball Box, just make a vertical throw from your dominant hand as the non-dominant hand is passing back its ball at the end of the step show above. This will set you up to run another cycle, at which point you simply keep repeating cycles and alternating sides.",
@@ -6571,7 +6851,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "fourballhalf-mess",
@@ -6612,11 +6894,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=VFvmEGdXWI8",
-        "title": "MiFraDeLa88 (demonstration)"
+        "title": "MiFraDeLa88 (demonstration)",
+        "url": "https://www.youtube.com/watch?v=VFvmEGdXWI8"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "fourballshower",
@@ -6658,11 +6942,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=3MWWjouSgXI",
-        "title": "Roma76811 (video)"
+        "title": "Roma76811 (video)",
+        "url": "https://www.youtube.com/watch?v=3MWWjouSgXI"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "fourballstackedbox",
@@ -6721,11 +7007,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=MWFWk4EDycA",
-        "title": "Roma76811 (video)"
+        "title": "Roma76811 (video)",
+        "url": "https://www.youtube.com/watch?v=MWFWk4EDycA"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "fourballwindmill",
@@ -6758,7 +7046,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Misc",
+    "tags": []
   },
   {
     "id": "invertedbox",
@@ -6799,11 +7089,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=KbLngWbhwwM",
-        "title": "Chris Hodge (video)"
+        "title": "Chris Hodge (video)",
+        "url": "https://www.youtube.com/watch?v=KbLngWbhwwM"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "karasbox",
@@ -6867,11 +7159,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=KvAm44jkxuk",
-        "title": "UberMathNerd (video)"
+        "title": "UberMathNerd (video)",
+        "url": "https://www.youtube.com/watch?v=KvAm44jkxuk"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "levels",
@@ -6906,15 +7200,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=oyU3VJ-jgPE",
-        "title": "Michael Falkov (video)"
+        "title": "Michael Falkov (video)",
+        "url": "https://www.youtube.com/watch?v=oyU3VJ-jgPE"
       },
       {
-        "url": "https://www.youtube.com/watch?v=5LGHlBgUd8o&amp;t=32",
-        "title": "Idiosensory (second trick)"
+        "title": "Idiosensory (second trick)",
+        "url": "https://www.youtube.com/watch?v=5LGHlBgUd8o&amp;t=32"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "lowshuffle",
@@ -6945,7 +7241,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "lukesshuffle",
@@ -6988,15 +7286,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut045.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut045.html"
       },
       {
-        "url": "https://www.youtube.com/watch?v=0vgw7Jwz-cE",
-        "title": "Guillaume Riesen (video)"
+        "title": "Guillaume Riesen (video)",
+        "url": "https://www.youtube.com/watch?v=0vgw7Jwz-cE"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "n-box",
@@ -7039,11 +7339,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=1ao2EEa6Y5g",
-        "title": "Atefoub (beginning of video)"
+        "title": "Atefoub (beginning of video)",
+        "url": "https://www.youtube.com/watch?v=1ao2EEa6Y5g"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "pistons",
@@ -7085,11 +7387,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=CUZogxnpLFA",
-        "title": "panos juggler (demonstration)"
+        "title": "panos juggler (demonstration)",
+        "url": "https://www.youtube.com/watch?v=CUZogxnpLFA"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "reversecrossedarmshower",
@@ -7114,7 +7418,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "reversefountain",
@@ -7154,11 +7460,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=qLZ5O-Dgp-c",
-        "title": "RTJCH (demonstration)"
+        "title": "RTJCH (demonstration)",
+        "url": "https://www.youtube.com/watch?v=qLZ5O-Dgp-c"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "reversesynchfountain",
@@ -7188,11 +7496,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/4bsynrevfountain.php",
-        "title": "Todd Strong (demonstration)"
+        "title": "Todd Strong (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/4bsynrevfountain.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "shuffle",
@@ -7235,15 +7545,17 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.twjc.co.uk/tut121.html",
-        "title": "TWJ Club (text-based)"
+        "title": "TWJ Club (text-based)",
+        "url": "http://www.twjc.co.uk/tut121.html"
       },
       {
-        "url": "https://www.youtube.com/watch?v=GeL1xbG0S3g",
-        "title": "TheGnome54 (video)"
+        "title": "TheGnome54 (video)",
+        "url": "https://www.youtube.com/watch?v=GeL1xbG0S3g"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "synchfountain",
@@ -7257,7 +7569,7 @@
       "Fountain"
     ],
     "relatedTricks": [
-      "Reverse \n\tSynchronous Fountain"
+      "Reverse Synchronous Fountain"
     ],
     "gifUrl": "/JugglingGifs/4balltricks/synchfountain.gif",
     "description": "The Synchronous Fountain is a variation of the standard Fountain pattern where two balls are thrown simultaneously, instead of a staggered timing. The trick itself is slightly harder than the normal Fountain, simply because you are dealing with two balls at once for each throw and each catch. Therefore, it is best for you to already know the regular Fountain before learning this synchronous variation, and this tutorial will assume you do. There is really only one step to learning the Synchronous Fountain once you know the standard pattern Start with four balls, two in each hand. Then, throw one ball from each hand simultaneously. Once those balls have reached their peak, throw the last two balls up along the same path, and then catch both pairs of balls. Practice this extensively. When you feel comfortable, add in a third pair of throws, then a fourth, fifth, and so on. Eventually, you will be able to run the pattern for long periods of time, at which point you will be juggling the Synchronous Fountain.",
@@ -7277,11 +7589,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=BvpfCWMoBhc",
-        "title": "MrJugglr (video)"
+        "title": "MrJugglr (video)",
+        "url": "https://www.youtube.com/watch?v=BvpfCWMoBhc"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "threeinone",
@@ -7292,7 +7606,7 @@
     "category": "3 Ball",
     "siteswap": "60",
     "prerequisites": [
-      "Two in one"
+      "Two in One"
     ],
     "relatedTricks": [],
     "gifUrl": "/JugglingGifs/3balltricks/threeinone.gif",
@@ -7321,11 +7635,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=z2k3ugex7Kw",
-        "title": "Chris Taibbi (video)"
+        "title": "Chris Taibbi (video)",
+        "url": "https://www.youtube.com/watch?v=z2k3ugex7Kw"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "truebox",
@@ -7382,11 +7698,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.toddstrong.com/balljuggling/box_with_a_lid.php",
-        "title": "Michael Karas (demonstration)"
+        "title": "Michael Karas (demonstration)",
+        "url": "http://www.toddstrong.com/balljuggling/box_with_a_lid.php"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "tsunami",
@@ -7433,7 +7751,9 @@
       }
     ],
     "tutorialLinks": [],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "534millsmess",
@@ -7475,11 +7795,60 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=ki7xH3L-NqI",
-        "title": "Steve Hoggan (video)"
+        "title": "Steve Hoggan (video)",
+        "url": "https://www.youtube.com/watch?v=ki7xH3L-NqI"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
+  },
+  {
+    "id": "552",
+    "name": "552",
+    "slug": "552",
+    "difficulty": 8,
+    "numBalls": 4,
+    "category": "4 Ball",
+    "siteswap": "552",
+    "prerequisites": [
+      "Cascade",
+      "Snake"
+    ],
+    "relatedTricks": [],
+    "gifUrl": "/JugglingGifs/4balltricks/552.gif",
+    "description": "The 552 is a four ball pattern in which each hand makes an uninterrupted pair of Cascade-like throws. This gives the pattern an odd asymmetrical-yet-symmetrical feel which separates it from other four ball tricks. The 552 can also be thought of as two two-ball Snakes crossing paths with each other, therefore it is best that you already know the three ball Snake before trying this pattern. To begin learning the 552, start with two balls in your dominant hand and one ball in your non-dominant. Throw the ball in your non-dominant hand across your body, and then make two sequential throws from your dominant hand to your non-dominant hand, clearing space for your dominant hand to catch the first ball. Then catch the other two balls in your non-dominant hand. Practice this on both sides. As you may have noticed, this is really just a portion of the three ball Snake. However, it is also the foundation of the 552. Once you have this step mastered, you are ready to add in the fourth ball. Start with two balls in each hand, then make one throw from your non-dominant hand, followed by two throws from your dominant hand (just as in the previous step). As the first ball from your dominant hand approaches your non-dominant hand, throw the ball the latter hand is holding, clearing space for the other ball to land. Once that ball has been caught, throw it back across your body, making room for the second ball from your dominant hand to be caught. Then catch the rest of the balls. Practice this on both sides. Once you have it mastered, all that's left to run the full 552 is to make another two throws with your dominant hand after the last throw in the step above, starting another cycle. This pattern is enjoyable to juggle in its own right, but is also a great warm up to the Five Ball Cascade.",
+    "tutorialContent": [
+      {
+        "type": "text",
+        "content": "The 552 is a four ball pattern in which each hand makes an uninterrupted pair of Cascade-like throws. This gives the pattern an odd asymmetrical-yet-symmetrical feel which separates it from other four ball tricks. The 552 can also be thought of as two two-ball Snakes crossing paths with each other, therefore it is best that you already know the three ball Snake before trying this pattern. To begin learning the 552, start with two balls in your dominant hand and one ball in your non-dominant. Throw the ball in your non-dominant hand across your body, and then make two sequential throws from your dominant hand to your non-dominant hand, clearing space for your dominant hand to catch the first ball. Then catch the other two balls in your non-dominant hand."
+      },
+      {
+        "type": "gif",
+        "url": "/JugglingGifs/4balltricks/552three.gif"
+      },
+      {
+        "type": "text",
+        "content": "Practice this on both sides. As you may have noticed, this is really just a portion of the three ball Snake. However, it is also the foundation of the 552. Once you have this step mastered, you are ready to add in the fourth ball. Start with two balls in each hand, then make one throw from your non-dominant hand, followed by two throws from your dominant hand (just as in the previous step). As the first ball from your dominant hand approaches your non-dominant hand, throw the ball the latter hand is holding, clearing space for the other ball to land. Once that ball has been caught, throw it back across your body, making room for the second ball from your dominant hand to be caught. Then catch the rest of the balls."
+      },
+      {
+        "type": "gif",
+        "url": "/JugglingGifs/4balltricks/552run.gif"
+      },
+      {
+        "type": "text",
+        "content": "Practice this on both sides. Once you have it mastered, all that's left to run the full 552 is to make another two throws with your dominant hand after the last throw in the step above, starting another cycle. This pattern is enjoyable to juggle in its own right, but is also a great warm up to the Five Ball Cascade."
+      }
+    ],
+    "tutorialLinks": [
+      {
+        "title": "Micah Rowe (video)",
+        "url": "https://www.youtube.com/watch?v=ez3YlwAQkh4"
+      }
+    ],
+    "librarianLearned": false,
+    "trickFamily": "Siteswaps",
+    "tags": []
   },
   {
     "id": "fourballmillsmess",
@@ -7536,11 +7905,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=N2c8uo5cGkM",
-        "title": "ashomsky (video)"
+        "title": "ashomsky (video)",
+        "url": "https://www.youtube.com/watch?v=N2c8uo5cGkM"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Mess",
+    "tags": []
   },
   {
     "id": "invertedshower",
@@ -7572,11 +7943,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=5wlkVfBB6v8",
-        "title": "absurdmike (video)"
+        "title": "absurdmike (video)",
+        "url": "https://www.youtube.com/watch?v=5wlkVfBB6v8"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "sprungcascade",
@@ -7617,11 +7990,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=sMhMY5npHAI",
-        "title": "eMretsiM (video)"
+        "title": "eMretsiM (video)",
+        "url": "https://www.youtube.com/watch?v=sMhMY5npHAI"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Box",
+    "tags": []
   },
   {
     "id": "fiveballcascade",
@@ -7638,7 +8013,7 @@
       "55550"
     ],
     "relatedTricks": [
-      "Reverse Five Ball Cascade"
+      "Five Ball Reverse Cascade"
     ],
     "gifUrl": "/JugglingGifs/5balltricks/fiveballcascade.gif",
     "description": "The Five Ball Cascade is the base pattern for five ball juggling. It has the same basic structure as the three ball Cascade, with each ball being thrown from one hand to the other in an arch across the body. For most jugglers, the Five Ball Cascade is one of the first patterns encountered that can't simply be learned in a day or two. Instead, it requires months and sometimes even years of practice to become proficient. For this reason, a step-by-step walthrough is not particularly helpful. Therefore, this tutorial will instead outline important juggling exercises that can be done to accelerate your progress. The first exercise to practice is the 552. While certainly distinct from the Five Ball Cascade, since many throws are made sequentially from the same hand, the 552 is a relatively slow-paced pattern that uses throws of roughly the same height and trajectory as the Five Ball Cascade. This is very important, since your success at mastering that pattern hinges on making accurate throws. Once you have mastered the 552, it is time to move on to the 5551. The 5551 maintains the same throws as those found in the 552, except for the addition of a horizontal pass. This pass is what gives the 5551 more value for learning the Five Ball Cascade, since the throws are faster and always alternate hands. Once you become comfortable with the 5551, the final exercise to practice is the 55550. The 55550 is essentially a Five Ball Cascade juggled with only four balls. The only real difference between the two patterns is that the final throw of the Five Ball Cascade is missing. The 55550 forces you to pay close attention to the cadence of your throws, since the gap normally present in the pattern can easily disappear with sloppy timing. Upon mastery of this final exercise, you are ready to add in the fifth ball. Start with three balls in your dominant hand and two balls in your non-dominant. Make a high Cascade throw from your dominant hand, and follow it up with two more identical throws, alternating hands each time. At this point, three balls should be in the air, and one ball should be in each hand. The first ball that you threw from your dominant hand should now be approaching your non-dominant hand. Make a throw from your non-dominant hand to clear space for the ball to be caught. Similarly, as the first ball you threw from your non-dominant hand approaches your dominant hand, make a throw from your dominant hand to clear space for that ball to be caught. Then catch the rest of the balls. Practice this step extensively. Once you are able to make and catch all five throws in a controlled manner, you simply need to keep adding more and more throws to the pattern as you become more and more comfortable. Eventually, you will be able to make dozens of throws, at which point it is safe to say that you are a five ball juggler. Of course, there is still a long road ahead to achieving mastery of the Five Ball Cascade, as you begin to make hundreds and then even thousands of throws without dropping.",
@@ -7682,19 +8057,21 @@
     ],
     "tutorialLinks": [
       {
-        "url": "http://www.juggling.org/help/numbers/5-balls/learning.html",
-        "title": "Rick Moll"
+        "title": "Rick Moll",
+        "url": "http://www.juggling.org/help/numbers/5-balls/learning.html"
       },
       {
-        "url": "http://www.juggling.org/help/numbers/5-balls/advice.html",
-        "title": "others"
+        "title": "others",
+        "url": "http://www.juggling.org/help/numbers/5-balls/advice.html"
       },
       {
-        "url": "https://www.youtube.com/watch?v=8SZR6USF8s4",
-        "title": "Chris Taibbi (video)"
+        "title": "Chris Taibbi (video)",
+        "url": "https://www.youtube.com/watch?v=8SZR6USF8s4"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": true,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "fiveballhalf-shower",
@@ -7703,7 +8080,7 @@
     "difficulty": 9,
     "numBalls": 5,
     "category": "5 Ball",
-    "siteswap": "73, 5, \n\tor (6x,4x)",
+    "siteswap": "73, 5, \tor (6x,4x)",
     "prerequisites": [
       "Five Ball Cascade",
       "Four Ball Half-Shower"
@@ -7727,11 +8104,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=Y_e-tE-zmlU",
-        "title": "MrJugglr (video)"
+        "title": "MrJugglr (video)",
+        "url": "https://www.youtube.com/watch?v=Y_e-tE-zmlU"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "fiveballreversecascade",
@@ -7755,11 +8134,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=YwXD0UySBN8",
-        "title": "MadJuggler97531 (video)"
+        "title": "MadJuggler97531 (video)",
+        "url": "https://www.youtube.com/watch?v=YwXD0UySBN8"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Basics",
+    "tags": []
   },
   {
     "id": "fiveballshower",
@@ -7799,11 +8180,13 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=cIr8N0cfLcc",
-        "title": "Roma76811 (demonstration)"
+        "title": "Roma76811 (demonstration)",
+        "url": "https://www.youtube.com/watch?v=cIr8N0cfLcc"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Shower",
+    "tags": []
   },
   {
     "id": "sixballfountain",
@@ -7845,10 +8228,12 @@
     ],
     "tutorialLinks": [
       {
-        "url": "https://www.youtube.com/watch?v=9d7Q2sMAps8",
-        "title": "Steve Hoggan (video)"
+        "title": "Steve Hoggan (video)",
+        "url": "https://www.youtube.com/watch?v=9d7Q2sMAps8"
       }
     ],
-    "librarianLearned": false
+    "librarianLearned": false,
+    "trickFamily": "Basics",
+    "tags": []
   }
 ]

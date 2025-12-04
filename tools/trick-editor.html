@@ -170,6 +170,10 @@
             color: var(--accent-green);
         }
 
+        .trick-item-meta .family {
+            color: var(--accent-blue);
+        }
+
         /* Main Content */
         .main {
             padding: 24px;
@@ -493,6 +497,7 @@
                     <div class="trick-item-meta">
                         <span>${t.category}</span>
                         <span>Level ${t.difficulty}</span>
+                        ${t.trickFamily ? '<span class="family">' + escapeHtml(t.trickFamily) + '</span>' : ''}
                         ${t.librarianLearned ? '<span class="learned">✓ C</span>' : ''}
                     </div>
                 </div>
@@ -507,6 +512,11 @@
             selectedIndex = index;
             renderTrickList();
             renderEditor();
+        }
+
+        function getUniqueFamilies() {
+            const families = [...new Set(tricks.map(t => t.trickFamily).filter(f => f && f.trim()))].sort();
+            return families;
         }
 
         function renderEditor() {
@@ -525,8 +535,15 @@
                 return;
             }
             
+            // Get unique families for autocomplete
+            const families = getUniqueFamilies();
+            const familyOptions = families.map(f => `<option value="${escapeHtml(f)}">`).join('');
+            
             main.innerHTML = `
                 <div class="editor">
+                    <datalist id="family-list">
+                        ${familyOptions}
+                    </datalist>
                     <div class="editor-header">
                         <h2>${escapeHtml(trick.name)}</h2>
                         <div class="editor-actions">
@@ -549,6 +566,7 @@
                             <div class="form-group">
                                 <label>Category</label>
                                 <select id="edit-category">
+                                    <option value="2 Ball" ${trick.category === '2 Ball' ? 'selected' : ''}>2 Ball</option>
                                     <option value="3 Ball" ${trick.category === '3 Ball' ? 'selected' : ''}>3 Ball</option>
                                     <option value="4 Ball" ${trick.category === '4 Ball' ? 'selected' : ''}>4 Ball</option>
                                     <option value="5 Ball" ${trick.category === '5 Ball' ? 'selected' : ''}>5 Ball</option>
@@ -566,6 +584,10 @@
                             <div class="form-group">
                                 <label>GIF URL</label>
                                 <input type="text" id="edit-gifUrl" value="${escapeHtml(trick.gifUrl || '')}">
+                            </div>
+                            <div class="form-group">
+                                <label>Trick Family</label>
+                                <input type="text" id="edit-trickFamily" list="family-list" value="${escapeHtml(trick.trickFamily || '')}" placeholder="e.g., Mills Mess, Box, Columns">
                             </div>
                             <div class="form-group">
                                 <label class="checkbox-group">
@@ -606,6 +628,19 @@
                                 </div>
                             `).join('')}
                             <button class="btn-add-item" onclick="addRelated()">+ Add Related Trick</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Tags</h3>
+                        <div class="array-editor" id="tags-editor">
+                            ${(trick.tags || []).map((tag, i) => `
+                                <div class="array-item">
+                                    <input type="text" value="${escapeHtml(tag)}" data-tag="${i}">
+                                    <button class="btn-remove" onclick="removeTag(${i})">×</button>
+                                </div>
+                            `).join('')}
+                            <button class="btn-add-item" onclick="addTag()">+ Add Tag</button>
                         </div>
                     </div>
                     
@@ -672,6 +707,14 @@
                 .map(el => el.value)
                 .filter(v => v.trim());
             
+            // Trick family
+            trick.trickFamily = document.getElementById('edit-trickFamily').value.trim();
+            
+            // Tags
+            trick.tags = Array.from(document.querySelectorAll('[data-tag]'))
+                .map(el => el.value)
+                .filter(v => v.trim());
+            
             // Tutorial content
             trick.tutorialContent = [];
             document.querySelectorAll('[data-content-index]').forEach(el => {
@@ -726,6 +769,8 @@
                 siteswap: '',
                 prerequisites: [],
                 relatedTricks: [],
+                trickFamily: '',
+                tags: [],
                 gifUrl: '',
                 description: '',
                 tutorialContent: [],
@@ -764,6 +809,18 @@
 
         function removeRelated(index) {
             tricks[selectedIndex].relatedTricks.splice(index, 1);
+            renderEditor();
+        }
+
+        function addTag() {
+            const trick = tricks[selectedIndex];
+            trick.tags = trick.tags || [];
+            trick.tags.push('');
+            renderEditor();
+        }
+
+        function removeTag(index) {
+            tricks[selectedIndex].tags.splice(index, 1);
             renderEditor();
         }
 
@@ -809,9 +866,13 @@
         function updateStats() {
             const stats = document.getElementById('stats');
             const learned = tricks.filter(t => t.librarianLearned).length;
+            const withFamily = tricks.filter(t => t.trickFamily).length;
+            const withTags = tricks.filter(t => t.tags && t.tags.length > 0).length;
             stats.innerHTML = `
                 <strong>${tricks.length}</strong> tricks total<br>
-                <strong>${learned}</strong> marked as learned
+                <strong>${learned}</strong> marked as learned<br>
+                <strong>${withFamily}</strong> with family<br>
+                <strong>${withTags}</strong> with tags
             `;
         }
 

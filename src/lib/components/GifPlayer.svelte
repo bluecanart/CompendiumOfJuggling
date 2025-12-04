@@ -26,19 +26,46 @@
 	
 	const speeds = [0.25, 0.5, 1, 1.5, 2];
 	
-	onMount(async () => {
+	let isMounted = $state(false);
+	let currentLoadedSrc = '';
+	
+	onMount(() => {
 		ctx = canvas.getContext('2d');
 		
 		// Create temp canvas for frame composition
 		tempCanvas = document.createElement('canvas');
 		tempCtx = tempCanvas.getContext('2d');
 		
-		await loadGif();
+		isMounted = true;
 	});
 	
 	onDestroy(() => {
 		if (animationId) {
 			cancelAnimationFrame(animationId);
+		}
+	});
+	
+	// Watch for src changes and reload the GIF
+	$effect(() => {
+		// Track src dependency
+		const currentSrc = src;
+		
+		// Only load if mounted and src has changed
+		if (isMounted && currentSrc && currentSrc !== currentLoadedSrc) {
+			// Cancel any existing animation
+			if (animationId) {
+				cancelAnimationFrame(animationId);
+				animationId = null;
+			}
+			
+			// Reset state
+			frameIndex = 0;
+			frames = [];
+			isPlaying = true;
+			speed = 1;
+			currentLoadedSrc = currentSrc;
+			
+			loadGif();
 		}
 	});
 	

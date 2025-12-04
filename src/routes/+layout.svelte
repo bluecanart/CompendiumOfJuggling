@@ -2,7 +2,7 @@
 	import '../app.css';
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
-	
+
 	let { children } = $props();
 	
 	let mobileMenuOpen = $state(false);
@@ -74,7 +74,7 @@
 {/if}
 
 <main id="main">
-	{@render children()}
+{@render children()}
 </main>
 
 <footer class="footer">
