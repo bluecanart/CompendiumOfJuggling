@@ -195,10 +195,9 @@
 									<p class="tutorial-text">{item.content}</p>
 								{:else if item.type === 'gif'}
 									<div class="tutorial-gif">
-										<img 
+										<GifPlayer 
 											src="{base}{item.url}" 
 											alt="Tutorial animation" 
-											loading="lazy"
 										/>
 									</div>
 								{/if}
@@ -520,12 +519,9 @@
 		margin: var(--space-md) 0;
 	}
 
-	.tutorial-gif img {
-		max-width: 200px;
-		height: auto;
-		background: var(--color-bg-card);
-		border-radius: var(--radius-lg);
-		border: 1px solid rgba(255, 255, 255, 0.1);
+	.tutorial-gif :global(.gif-player) {
+		max-width: 300px;
+		width: 100%;
 	}
 
 	/* Plain description fallback */
@@ -683,8 +679,8 @@
 	}
 
 	@media (max-width: 768px) {
-		.tutorial-gif img {
-			max-width: 160px;
+		.tutorial-gif :global(.gif-player) {
+			max-width: 240px;
 		}
 	}
 

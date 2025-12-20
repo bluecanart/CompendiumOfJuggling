@@ -1,0 +1,12 @@
+# Requirements for Trick Editor Python Application
+
+# Pillow - For displaying GIF previews in the editor
+# This is optional but highly recommended for better image handling
+Pillow>=10.0.0
+
+# Note: tkinter is included with Python by default on most systems
+# If tkinter is not available on your system:
+# - On Ubuntu/Debian: sudo apt-get install python3-tk
+# - On macOS: comes with Python from python.org
+# - On Windows: comes with Python installer from python.org
+
