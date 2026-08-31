@@ -1852,8 +1852,8 @@
     "name": "Reverse Crossunder",
     "slug": "reversecrossunder",
     "difficulty": 4,
-    "numBalls": 2,
-    "category": "2 Ball",
+    "numBalls": 3,
+    "category": "3 Ball",
     "siteswap": "(4x,4x)(4x,0)",
     "prerequisites": [
       "Columns"
