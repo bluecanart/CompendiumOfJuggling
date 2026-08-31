@@ -1674,7 +1674,7 @@
         "url": "https://www.youtube.com/watch?v=18tVYxlgvus"
       }
     ],
-    "librarianLearned": false,
+    "librarianLearned": true,
     "trickFamily": "Columns",
     "tags": []
   },
@@ -1852,8 +1852,8 @@
     "name": "Reverse Crossunder",
     "slug": "reversecrossunder",
     "difficulty": 4,
-    "numBalls": 3,
-    "category": "3 Ball",
+    "numBalls": 2,
+    "category": "2 Ball",
     "siteswap": "(4x,4x)(4x,0)",
     "prerequisites": [
       "Columns"
@@ -1891,7 +1891,7 @@
         "url": "http://www.twjc.co.uk/tut123.html"
       }
     ],
-    "librarianLearned": false,
+    "librarianLearned": true,
     "trickFamily": "Body Throws",
     "tags": []
   },
@@ -2222,7 +2222,7 @@
         "url": "https://www.youtube.com/watch?v=AVKnIjnvk7c"
       }
     ],
-    "librarianLearned": false,
+    "librarianLearned": true,
     "trickFamily": "Shower",
     "tags": []
   },
@@ -4643,7 +4643,7 @@
         "url": "https://www.youtube.com/watch?v=klfMQs0rLos"
       }
     ],
-    "librarianLearned": false,
+    "librarianLearned": true,
     "trickFamily": "Mess",
     "tags": []
   },
@@ -4827,7 +4827,7 @@
         "url": "https://www.youtube.com/watch?v=JkjQFVTPmZA"
       }
     ],
-    "librarianLearned": false,
+    "librarianLearned": true,
     "trickFamily": "Mess",
     "tags": []
   },
@@ -6244,7 +6244,7 @@
         "url": "http://www.toddstrong.com/balljuggling/threading_the_box.php"
       }
     ],
-    "librarianLearned": false,
+    "librarianLearned": true,
     "trickFamily": "Box",
     "tags": []
   },
@@ -7639,7 +7639,7 @@
         "url": "https://www.youtube.com/watch?v=z2k3ugex7Kw"
       }
     ],
-    "librarianLearned": false,
+    "librarianLearned": true,
     "trickFamily": "Basics",
     "tags": []
   },
